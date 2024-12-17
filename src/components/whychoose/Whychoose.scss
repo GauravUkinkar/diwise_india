@@ -1,0 +1,127 @@
+.why-parent {
+    padding: 50px 10px;
+    background-color: var(--grey);
+
+    .why-container {
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        .why-choose-heading {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .why-choose-card-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            .why-choose-card {
+                width: 270px;
+                position: relative;
+                overflow: hidden;
+                background-color: white;
+                transition: var(--slow);
+                border-radius:5px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: -100%;
+                    left: 0;
+                    background: var(--accent);
+                    opacity: 0;
+                    z-index: 1;
+                    transition: var(--medd);
+                }
+
+                .why-choose-card-text-box {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+                    padding: 20px 15px;
+                    text-align: center;
+                    position: relative;
+                    z-index: 2;
+
+                    .why-choose-card-img {
+                        background: url('../../assets/imgsvg.svg');
+                        width: 50px;
+                        height: 50px;
+                        transition: var(--medd);
+                    }
+
+
+                }
+
+                &:hover {
+                    &::after {
+                        top: 0;
+                        opacity: 1;
+                        color: white;
+
+                    }
+
+                    .why-choose-card-img {
+                        transform: scale(0.9);
+                        transform-origin: center center;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+
+
+.white_div {
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 0px 15px red;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: orange;
+        z-index: 1;
+    }
+
+    .content_div {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        z-index: 2;
+    }
+
+
+    &:hover {
+        &::after {
+            top: 0;
+        }
+    }
+}

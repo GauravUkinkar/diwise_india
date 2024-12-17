@@ -1,13 +1,31 @@
 .hook-parent {
     background: url('../../assets/hero/hero.jpg');
-    height: 600px;
+    height: 400px;
+    background-attachment: fixed;
+    position: relative;
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.388);
+
+    }
 
     .hook-container {
+        position: relative;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        gap: calc(var(--unit) *2);
+        
 
+        .hook-heading {
+            color: var(--white);
+            font-size: 30px;
+        }
     }
 
 }

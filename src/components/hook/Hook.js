@@ -7,8 +7,9 @@ function Hook() {
    <>
    
     <div className="hook-parent parent bg-img-cover">
+        <div className="overlay"></div>
         <div className="hook-container container">
-            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, sit?</h3>
+            <h3 className='hook-heading'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, sit?</h3>
             <Link className='btn'>Know More</Link>
         </div>
 
