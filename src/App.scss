@@ -21,7 +21,7 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 body{
   scroll-behavior: smooth ;
@@ -57,7 +57,7 @@ p {
   padding: 10px 20px;
   background: var(--accent);
   color: var(--white);
-  border: none;
+  border: none;  
   transition: var(--quick);
   border-radius: 5px;
   width: fit-content;
@@ -89,5 +89,9 @@ p {
   background-position: center center !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
+}
+
+.highlight{
+    color: var(--accent);
 }
 
