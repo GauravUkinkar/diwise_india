@@ -1,0 +1,12 @@
+.section-indicator{
+padding: 10px 15px;
+border: 1px solid var(--accent);
+border-radius: 50px;
+max-width: fit-content;
+
+    .section-text{
+        font-size: 18px;
+        color: var(--accent);
+
+    }
+}
