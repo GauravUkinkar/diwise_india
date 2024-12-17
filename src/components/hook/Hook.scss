@@ -1,0 +1,13 @@
+.hook-parent {
+    background: url('../../assets/hero/hero.jpg');
+    height: 600px;
+
+    .hook-container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
