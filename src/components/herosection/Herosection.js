@@ -6,12 +6,14 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom';
+import Header from '../header/Header';
 
 
 function Herosection() {
     return (
         <>
             <div className="hero-parent parent">
+           
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}

@@ -1,0 +1,54 @@
+.header-parent {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top:0;
+    transition: background-color 0.3s ease; 
+    z-index: 5;
+    background-color: white;
+ 
+    .header-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            height: 50px;
+            width: 100px;
+            background: url('../../assets/logo.jpg');
+        }
+    }
+
+    .nav-links{
+        display: flex;
+        gap:20px;
+        // align-items: center;
+      a{
+        text-decoration: none;
+        color: var(--black);
+        font-weight: 500;
+      }
+
+    }
+
+}
+
+// <div className={`header-parent parent ${isScrolled ? 'scrolled' : ''}`}>
+// const [isScrolled, setIsScrolled] = useState(false);
+
+// useEffect(() => {
+//   const handleScroll = () => {
+//     if (window.scrollY > 10) {
+//       setIsScrolled(true);
+//     } else {
+//       setIsScrolled(false);
+//     }
+//   };
+
+//   window.addEventListener('scroll', handleScroll);
+//   return () => {
+//     window.removeEventListener('scroll', handleScroll);
+//   };
+// }, []);
