@@ -17,7 +17,7 @@ function Hservice() {
         <>
             <div className="hservice-parent parent">
                 <div className="hservice-container container">
-                    <h3>Our <span className='highlight'>Service</span></h3>
+                    <h2>Our <span className='highlight'>Service</span></h2>
                     <Swiper
                         spaceBetween={20}
                         centeredSlides={false}
