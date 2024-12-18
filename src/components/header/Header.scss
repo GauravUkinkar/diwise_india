@@ -1,14 +1,20 @@
 .header-parent {
+    overflow: hidden;
     display: flex;
     height: 100px;
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    top:0;
-    transition: background-color 0.3s ease; 
-    z-index: 5;
-    background-color: white;
- 
+    top: 0;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+    transition: var(--medd);
+
+    &.scrolled {
+        background-color: var(--black);
+        height: 70px;
+    }
+
     .header-left {
         display: flex;
         justify-content: center;
@@ -17,38 +23,66 @@
         .logo {
             height: 50px;
             width: 100px;
-            background: url('../../assets/logo.jpg');
+            background: url('../../assets/white-logo.svg');
         }
     }
 
-    .nav-links{
+    .nav-links {
         display: flex;
-        gap:20px;
+        gap: 20px;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 0.7px;
+
         // align-items: center;
-      a{
-        text-decoration: none;
-        color: var(--black);
-        font-weight: 500;
-      }
+        a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 500;
+        }
 
     }
 
+    .contact-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .grid-icon {
+            height: 25px;
+            width: 25px;
+            background: url('../../assets/grid.svg')
+        }
+
+        .canvas-logo {
+            height: 70px;
+            width: 100px;
+            background: url('../../assets/logo.jpg');
+        }
+
+        .close-canvas {
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        .offcanvas-body {
+            .icon-box {
+                display: flex;
+                gap: 10px;
+
+                .icons {
+                    font-size: 25px;
+                    color: var(--accent);
+
+                }
+
+                .address {
+                    font-size: 16px;
+                }
+            }
+
+        }
+
+
+    }
 }
-
-// <div className={`header-parent parent ${isScrolled ? 'scrolled' : ''}`}>
-// const [isScrolled, setIsScrolled] = useState(false);
-
-// useEffect(() => {
-//   const handleScroll = () => {
-//     if (window.scrollY > 10) {
-//       setIsScrolled(true);
-//     } else {
-//       setIsScrolled(false);
-//     }
-//   };
-
-//   window.addEventListener('scroll', handleScroll);
-//   return () => {
-//     window.removeEventListener('scroll', handleScroll);
-//   };
-// }, []);
