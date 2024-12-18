@@ -1,6 +1,7 @@
 import React from 'react'
 import TwoColumn from '../../components/twoColumn/TwoColumn'
 import img from "../../img/img.webp"
+import Bento from '../../components/bento/Bento'
 
 function About() {
   return (
@@ -16,6 +17,7 @@ function About() {
     
     
     />
+    <Bento/>
 
     
     
