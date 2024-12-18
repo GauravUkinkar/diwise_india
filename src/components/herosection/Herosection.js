@@ -15,10 +15,10 @@ function Herosection() {
             <div className="hero-parent parent">
            
                 <Swiper
-                    spaceBetween={30}
+                    spaceBetween={0}
                     centeredSlides={true}
                     autoplay={{
-                        delay: 2500,
+                        delay: 250000,
                         disableOnInteraction: false,
                     }}
                     pagination={{
@@ -33,7 +33,7 @@ function Herosection() {
                         <div className="slide slide-img1 bg-img-cover">
                          <div className="slide-text-box container">   
                             <h2 className='slide-heading'>We are <br/>Digital Marketing<br/> Creative Gigg</h2>
-                            <Link className='btn'>Know More</Link>
+                            <Link className='cta'>Know More</Link>
                             </div>   
                         </div>
 
@@ -43,7 +43,7 @@ function Herosection() {
                         <div className="slide slide-img1 bg-img-cover">
                          <div className="slide-text-box container">   
                             <h2 className='slide-heading'>We2 are <br/>Digital Marketing<br/> Creative Gigg</h2>
-                            <Link className='btn'>Know More</Link>
+                            <Link className='cta'>Know More</Link>
                             </div>   
                         </div>
 
@@ -53,7 +53,7 @@ function Herosection() {
                         <div className="slide slide-img1 bg-img-cover">
                          <div className="slide-text-box container">   
                             <h2 className='slide-heading'>We3 are <br/>Digital Marketing<br/> Creative Gigg</h2>
-                            <Link className='btn'>Know More</Link>
+                            <Link className='cta'>Know More</Link>
                             </div>   
                         </div>
 

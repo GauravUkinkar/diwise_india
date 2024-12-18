@@ -14,6 +14,7 @@
   --grey:rgb(230, 230, 230);
   --backcolor1:#fff8f2;
   --backcolor2:#fff8f2;
+  --bgcolor1:#FAF7EF;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap');
@@ -31,6 +32,8 @@
 
 body {
   scroll-behavior: smooth;
+
+
 }
 
 
@@ -96,6 +99,7 @@ p {
 
   &:hover {
     transform: translateY(-2px);
+    color: white;
 
   }
 }
