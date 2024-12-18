@@ -21,8 +21,8 @@ const handleScroll = ()=>{
                 </div>
 
                 <div className="nav-links">
-                    <Link>Home</Link>
-                    <Link>About</Link>
+                    <Link to='/'>Home</Link>
+                    <Link to='/about'>About</Link>
                     <Link>Services</Link>
                     <Link>Blog</Link>
                     <Link>Contact</Link>
