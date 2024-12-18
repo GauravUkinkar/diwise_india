@@ -5,15 +5,15 @@ import './Hook.scss';
 function Hook() {
   return (
    <>
+   <div className="hook parent ">
+    <div className="hook-container container bg-img-contain">
+      
+      <h2>You Have an <span className='highlight'> Idea?</span></h2>
+      <a href="" className="cta">Tell Us</a>
+    </div>
+   </div>
    
-    <div className="hook-parent parent bg-img-cover">
-        <div className="overlay"></div>
-        <div className="hook-container container">
-            <h3 className='hook-heading'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, sit?</h3>
-            <Link className='btn'>Know More</Link>
-        </div>
-
-</div>
+  
    </>
   )
 }
