@@ -32,7 +32,7 @@ function Herosection() {
                         <div className="overlay"></div>
                         <div className="slide slide-img1 bg-img-cover">
                          <div className="slide-text-box container">   
-                            <h2 className='slide-heading'>We are <br/>Digital Marketing<br/> Creative Gigg</h2>
+                            <h2 className='slide-heading'>We are <br/>Digital Marketing<br/> <span className='highlight2'>Creative Gigg</span></h2>
                             <Link className='cta'>Know More</Link>
                             </div>   
                         </div>
@@ -42,7 +42,7 @@ function Herosection() {
                         <div className="overlay"></div>
                         <div className="slide slide-img1 bg-img-cover">
                          <div className="slide-text-box container">   
-                            <h2 className='slide-heading'>We2 are <br/>Digital Marketing<br/> Creative Gigg</h2>
+                         <h2 className='slide-heading'>We are <br/>Digital Marketing<br/> <span className='highlight2'>Creative Gigg</span></h2>
                             <Link className='cta'>Know More</Link>
                             </div>   
                         </div>
@@ -52,7 +52,7 @@ function Herosection() {
                         <div className="overlay"></div>
                         <div className="slide slide-img1 bg-img-cover">
                          <div className="slide-text-box container">   
-                            <h2 className='slide-heading'>We3 are <br/>Digital Marketing<br/> Creative Gigg</h2>
+                         <h2 className='slide-heading'>We are <br/>Digital Marketing<br/> <span className='highlight2'>Creative Gigg</span></h2>
                             <Link className='cta'>Know More</Link>
                             </div>   
                         </div>
