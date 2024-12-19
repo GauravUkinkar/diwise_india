@@ -74,7 +74,9 @@
                 }
 
                 .s-card-p {
-                    color: black !important;
+                    // color: rgb(0, 0, 0) !important;
+                    font-size: 16px !important;
+                    font-weight: 400;
                 }
 
                 .service-card-img1 {
@@ -122,9 +124,9 @@
 
                 }
 
-                h4,
-                p {
-                    color: var(--white);
+                .service-card-heading,
+                .s-card-p {
+                    color: var(--white)!important;
                 }
 
                 .service-card-img {

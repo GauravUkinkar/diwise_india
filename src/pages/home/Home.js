@@ -5,6 +5,7 @@ import Hook from '../../components/hook/Hook'
 import Whychoose from '../../components/whychoose/Whychoose'
 import Hservice from '../../components/hservice/Hservice';
 import AboutC from '../../components/about/AboutC';
+import Hcounter from '../../components/counter/Hcounter'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
 
 */}
 <AboutC />
+<Hcounter/>
 <Hservice/>
 <Hook/>
 
