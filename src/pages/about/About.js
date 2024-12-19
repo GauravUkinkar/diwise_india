@@ -2,6 +2,7 @@ import React from 'react'
 import TwoColumn from '../../components/twoColumn/TwoColumn'
 import img from "../../img/img.webp"
 import AboutC from '../../components/about/AboutC'
+import LogoMarque from '../../components/logoMarque/LogoMarque'
 
 function About() {
   return (
@@ -19,6 +20,7 @@ function About() {
     />
 
     <AboutC/>
+    <LogoMarque/>
     
 
     
