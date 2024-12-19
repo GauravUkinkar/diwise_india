@@ -21,7 +21,7 @@ function Hservice() {
                     <Swiper
                         spaceBetween={20}
                         centeredSlides={false}
-                        slidesPerView={4}
+                        slidesPerView={3}
                         autoplay={{
                             delay: 2500,
                             disableOnInteraction: false,

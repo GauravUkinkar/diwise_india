@@ -34,11 +34,18 @@ function Header() {
         </div>
 
         <div className="nav-links">
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link>Services</Link>
-          <Link>Blog</Link>
-          <Link>Contact</Link>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <div className="dropdown">
+            <Link to="#" className="dropdown-toggle">Services</Link>
+            <div className="dropdown-menu">
+              <Link to="/service1">Service 1</Link>
+              <Link to="/service2">Service 2</Link>
+              <Link to="/service3">Service 3</Link>
+            </div>
+          </div>
+          <Link to="/blog">Blog</Link>
+          <Link to="/contact">Contact</Link>
         </div>
 
 
