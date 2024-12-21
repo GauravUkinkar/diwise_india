@@ -3,6 +3,7 @@ import TwoColumn from '../../components/twoColumn/TwoColumn'
 import img from "../../img/img.webp"
 import AboutC from '../../components/about/AboutC'
 import LogoMarque from '../../components/logoMarque/LogoMarque'
+import Founder from '../../components/founder/Founder'
 
 function About() {
   return (
@@ -17,8 +18,10 @@ function About() {
     
     
     
-    />   
+    /> 
+
     <LogoMarque/>
+    <Founder/>
     
 
     

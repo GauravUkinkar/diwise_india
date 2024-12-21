@@ -52,37 +52,40 @@ function Footer() {
         </div>
 
         {/* Last Section */}
-        <div className="footer-last">
-          <div className="social-icons">
-            <a href="https://www.facebook.com/DIwiseLtd" target="_blank">
-              <FaFacebookF />
-            </a>
-            <a href="https://www.instagram.com/diwiseltd/" target="_blank" >
-              <FaInstagram />
-            </a>
-            <a href="https://x.com/i/flow/login?redirect_after_login=%2FDIwiseLtd" target="_blank" >
-            <FaXTwitter />
-            </a>
-            <a href="https://www.linkedin.com/company/diwiseltd/" target="_blank" >
-            <FaLinkedinIn />
-            </a>
-          </div>
-          <p>
-            <a href="tel:+918482936866" className="tel-link">
-            +91 8482936866
-            </a>
-          </p>
-          <p>
-            <a
-              href="https://www.google.com/maps/place/10+Biz+Park/@18.5752056,73.9098664,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c147b8b70951:0x8614c143f0b9c8c!8m2!3d18.5752056!4d73.9098664!16s%2Fg%2F11ft03mdm8?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="map-link"
-            >
-              Office no. 214-216, 10 Biz Park, Airport Road, Vimannagar, Pune- 411014
-            </a>
-          </p>
-        </div>
+        <div className="footer-last" data-aos="fade-up" data-aos-delay="200" >
+  <div className="social-icons" data-aos="fade-up" data-aos-delay="400">
+    <a href="https://www.facebook.com/DIwiseLtd" target="_blank" data-aos="fade-up" data-aos-delay="200">
+      <FaFacebookF />
+    </a>
+    <a href="https://www.instagram.com/diwiseltd/" target="_blank" data-aos="fade-up" data-aos-delay="400">
+      <FaInstagram />
+    </a>
+    <a href="https://x.com/i/flow/login?redirect_after_login=%2FDIwiseLtd" target="_blank" data-aos="fade-up" data-aos-delay="600">
+      <FaXTwitter />
+    </a>
+    <a href="https://www.linkedin.com/company/diwiseltd/" target="_blank" data-aos="fade-up" data-aos-delay="800">
+      <FaLinkedinIn />
+    </a>
+  </div>
+  <p>
+    <a href="tel:+918482936866" className="tel-link" data-aos="fade-up" data-aos-delay="1200">
+      +91 8482936866
+    </a>
+  </p>
+  <p>
+    <a
+      href="https://www.google.com/maps/place/10+Biz+Park/@18.5752056,73.9098664,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c147b8b70951:0x8614c143f0b9c8c!8m2!3d18.5752056!4d73.9098664!16s%2Fg%2F11ft03mdm8?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="map-link"
+      data-aos="fade-up"
+      data-aos-delay="1200"
+    >
+      Office no. 214-216, 10 Biz Park, Airport Road, Vimannagar, Pune- 411014
+    </a>
+  </p>
+</div>
+
       </div>
     </div>
   );
