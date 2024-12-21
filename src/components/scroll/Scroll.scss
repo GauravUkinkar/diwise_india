@@ -1,0 +1,43 @@
+:root {
+    --accent: orange; /* Accent color for the progress bar */
+  }
+  
+  .scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease-out; /* Add a slight bounce effect when clicked */
+  }
+  
+  .scroll:active {
+    transform: translateY(-5px); /* Move upwards slightly when clicked */
+  }
+  
+  .progress-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .arrow-up {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .scroll:hover .progress-circle {
+    background: var(--accent);
+  }
+  
+  .scroll:hover {
+    transform: scale(1.1); /* Scale the button slightly on hover */
+  }
+  

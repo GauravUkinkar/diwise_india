@@ -8,6 +8,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
+import Scroll from "./components/scroll/Scroll";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
+      <Scroll/>
       <Header/>
         <Routes>
           <Route path="/" element={<Home/>} />
