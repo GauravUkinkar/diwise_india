@@ -39,9 +39,11 @@ function Header() {
           <div className="dropdown">
             <Link to="#" className="dropdown-toggle">Services</Link>
             <div className="dropdown-menu">
-              <Link to="/service1">Service 1</Link>
-              <Link to="/service2">Service 2</Link>
-              <Link to="/service3">Service 3</Link>
+              <Link to="/service1">Business Launchpad</Link>
+              <Link to="/service2">Digital Marketing</Link>
+              <Link to="/service3">Branding and Design</Link>
+              <Link to="/service3">Public Relations</Link>
+              <Link to="/service3">Website Development</Link>
             </div>
           </div>
           <Link to="/blog">Blog</Link>

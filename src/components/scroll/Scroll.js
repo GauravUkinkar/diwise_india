@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Scroll.scss';
+import { LiaLongArrowAltUpSolid } from "react-icons/lia";
 
 function Scroll() {
   const [scrollTop, setScrollTop] = useState(0);
@@ -36,7 +37,7 @@ function Scroll() {
             background: `conic-gradient(var(--accent, orange) ${scrollTop}%, #ccc ${scrollTop}%)`,
           }}
         >
-          <span className="arrow-up">↑</span>
+          <span className="arrow-up"><LiaLongArrowAltUpSolid /></span>
         </div>
       </div>
     </>
