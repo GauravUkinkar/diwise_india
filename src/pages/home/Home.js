@@ -6,6 +6,7 @@ import Whychoose from '../../components/whychoose/Whychoose'
 import Hservice from '../../components/hservice/Hservice';
 import AboutC from '../../components/about/AboutC';
 import Hcounter from '../../components/counter/Hcounter'
+import LogoMarque from '../../components/logoMarque/LogoMarque'
 
 function Home() {
   return (

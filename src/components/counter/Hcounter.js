@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Hcounter.scss';
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const Counter = ({ endValue, label, counter_text, icon, startCounting }) => {
   const [counter, setCounter] = useState(0);
@@ -26,13 +28,23 @@ const Counter = ({ endValue, label, counter_text, icon, startCounting }) => {
     }
   }, [startCounting, endValue]);
 
+  useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration (ms)
+        easing: "ease-in-out", // Animation easing
+        once: true, // Whether the animation should happen only once
+      });
+    }, []);
+
+
+
   return (
     <div className="col-md-3 new" ref={counterRef}>
       <div className="counter-box">
         <i className={`fa ${icon}`}></i>
-        <span className="counter">{counter}</span>
-        <h4 className="hcounter-heading">{label}</h4>
-        <p className="hcounter-p">{counter_text}</p>
+        <span className="counter" data-aos="fade-up" data-aos-delay="200">{counter}<strong> +</strong></span>
+        <h4 className="hcounter-heading" data-aos="fade-up" data-aos-delay="400">{label}</h4>
+        <p className="hcounter-p" data-aos="fade-up" data-aos-delay="600">{counter_text}</p>
       </div>
     </div>
   );

@@ -2,12 +2,13 @@
     height: fit-content;
     padding: 50px 0px;
     
+    
 
     .hook-container{
         width: 100%;
         height: 100%;
         display: flex;        
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         padding: 30px 40px;
         gap: 20px;

@@ -17,9 +17,7 @@ function About() {
     
     
     
-    />
-
-    <AboutC/>
+    />   
     <LogoMarque/>
     
 

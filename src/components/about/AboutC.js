@@ -24,22 +24,22 @@ function About() {
 
   return (
   <>
-  <div className="about parent" data-aos="fade-up">
+  <div className="about parent" >
     <div className="about-container container" >
     <div className="about-left">
-      <div className="img bg-img-cover"></div>
-      <h3>Lorem <span className='highlight'>ipsum</span></h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit commodi possimus ad officiis autem voluptatibus maiores distinctio quia veritatis aliquam vitae perspiciatis ab facilis tempore porro nobis inventore similique optio, deleniti quod esse.</p>
-      <a href="" className="cta">Discover More</a>
+      <div className="img bg-img-cover" data-aos="fade-right" data-aos-delay="200"></div>
+      <h3 data-aos="fade-right" data-aos-delay="400">Lorem <span className='highlight'>ipsum</span></h3>
+      <p data-aos="fade-right"  data-aos-delay="600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit commodi possimus ad officiis autem voluptatibus maiores distinctio quia veritatis aliquam vitae perspiciatis ab facilis tempore porro nobis inventore similique optio, deleniti quod esse.</p>
+      <a href="" className="cta" data-aos="fade-right" data-aos-delay="200">Discover More</a>
 
     </div>
-    <div className="about-right">
-      <h2>Why <span className='highlight'>Choose Us?</span></h2>
-      <p>Lorem, ipsum.10lorem20Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit commodi possimus ad officiis autem voluptatibus maioresLorem, ipsum.10lorem20Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit commodi possimus ad officiis autem voluptatibus maiores</p>
+    <div className="about-right" data-aos="fade-up" data-aos-delay="200">
+      <h2 data-aos="fade-up" data-aos-delay="400">Why <span className='highlight'>Choose Us?</span></h2>
+      <p data-aos="fade-up" data-aos-delay="600">Lorem, ipsum.10lorem20Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit commodi possimus ad officiis autem voluptatibus maioresLorem, ipsum.10lorem20Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit commodi possimus ad officiis autem voluptatibus maiores</p>
 
 
          {/* Accordions */}
-         <div className="accordion">
+         <div className="accordion" data-aos="fade-up" data-aos-delay="800">
               {[
                 {
                   title: "Technology",
@@ -57,7 +57,7 @@ function About() {
                     "Excellence is a continuous process. Keeping up with the latest industrial trends and being up to date with newer technologies is reinforced within the team.",
                 },
               ].map((item, index) => (
-                <div key={index}>
+                <div key={index} data-aos="fade-up" data-aos-delay={400 * index}>
                   <button
                     className="accordion-header"
                     onClick={() => toggleAccordion(index)}
@@ -78,7 +78,7 @@ function About() {
               ))}
             </div>
 
-            <p>Lorem, ipsum.10lorem20Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit commodi possimus ad officiis autem voluptatibus maiores Lorem, ipsum.10lorem20Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit commodi possimus ad officiis autem voluptatibus maiores</p>
+            <p data-aos="fade-up" data-aos-delay="1000">Lorem, ipsum.10lorem20Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit commodi possimus ad officiis autem voluptatibus maiores Lorem, ipsum.10lorem20Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit commodi possimus ad officiis autem voluptatibus maiores</p>
           
 
       

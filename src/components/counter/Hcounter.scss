@@ -14,7 +14,7 @@
             .counter-box {
                 color: white !important;
                 display: flex;
-                flex-direction: column;
+                flex-direction: column;                
                 position: relative;
                 color: black;
                 display: inline-block;
@@ -45,13 +45,19 @@
                     font-size: 40px;
                     font-weight: 700;
                     padding-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
                 }
                 .hcounter-heading {
                     color: white;
+                    text-align: center;
                 }
 
                 .hcounter-p {
                     color: rgba(255, 255, 255, 0.8);
+                    text-align: center;
                 }
             }
 
