@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; 
 import Scroll from "./components/scroll/Scroll";
 import Blog from "./pages/blog/Blog";
+import Blog_details from "./pages/blogdetails/Blog_details";
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/blog" element={<Blog /> } />
-
+<Route path="/blog_detail" element={<Blog_details /> } />
           {/* <Route path="/test" element={<Test/>} /> */}
         </Routes>
       <Footer/>  
