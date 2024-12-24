@@ -1,31 +1,25 @@
-import { useEffect, useState } from "react";
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './App.scss';
-import About from './pages/about/About';
+import "./App.scss";
+
+// Pages
+import About from "./pages/about/About";
 import Home from "./pages/home/Home";
 import Blog from "./pages/blog/Blog";
 import Blog_details from "./pages/blogdetails/Blog_details";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import Scroll from "./components/scroll/Scroll";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Business from "./pages/businessLaunchpad/Business";
-
-import Test from "./pages/test/Test";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Scroll from "./components/scroll/Scroll";
-import Blog from "./pages/blog/Blog";
-import Blog_details from "./pages/blogdetails/Blog_details";
 import Contact from "./pages/contact/Contact";
 
-function App() {
- 
+// Components
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import Scroll from "./components/scroll/Scroll";
 
+// AOS (Animate on Scroll)
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+function App() {
   useEffect(() => {
     // Initialize AOS for animations
     AOS.init({
@@ -33,40 +27,23 @@ function App() {
       easing: "ease-in-out", // Animation easing
       once: true, // Whether the animation should happen only once
     });
-
   }, []);
 
   return (
     <div className="App">
-     
-        <BrowserRouter>
-          <Scroll />
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/businessLaunchpad" element={<Business />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog_detail" element={<Blog_details />} />
-          </Routes>
-          <Footer />
-        </BrowserRouter>
-      
-
       <BrowserRouter>
         <Scroll />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/businessLaunchpad" element={<Business />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog_detail" element={<Blog_details />} />
-          <Route path='contact' element={<Contact/>}  />
-          {/* <Route path="/test" element={<Test/>} /> */}
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>
-
     </div>
   );
 }
