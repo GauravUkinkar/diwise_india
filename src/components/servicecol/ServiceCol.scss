@@ -1,0 +1,86 @@
+.servicecol {
+    height: fit-content;
+    padding: 50px 0px;
+    background: var(--backcolor1);
+
+    .servicecol-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+        gap: 40px;
+
+        .servicecol-left {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+        }
+
+        .servicecol-right {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the start */
+            gap: 40px;
+
+            .servicecol-right-top,
+            .servicecol-right-middle,
+            .servicecol-right-bottom {
+                width: 100%;
+                display: flex; /* Ensure items are in a row */
+                flex-direction: row; /* Align children horizontally */
+                align-items: center; /* Vertically center-align items */
+                gap: 20px;
+                background-color: #ffffff;
+                border-radius: 20px;
+                padding: 20px;
+
+                .servicecol-right-top-left,
+                .servicecol-right-middle-left,
+                .servicecol-right-bottom-left {
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    
+
+                    .icon{
+                        font-size: 30px;
+                        color: var(--accent);
+                        
+                    }
+                }
+
+                .servicecol-right-top-right,
+                .servicecol-right-middle-right,
+                .servicecol-right-bottom-right {
+                    flex: 1; /* Take up the remaining space for text */
+                    display: flex;
+                    flex-direction: column; /* Text stacked vertically */
+                    justify-content: center;                   
+                    gap: 5px;
+
+                    h3 {
+                        
+                        font-size: 24px;
+                        color: var(--textcolor1);
+                    }
+
+                    p {
+                        
+                        font-size: 18px;
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+}
