@@ -5,6 +5,7 @@ import AboutC from '../../components/about/AboutC'
 import LogoMarque from '../../components/logoMarque/LogoMarque'
 import Founder from '../../components/founder/Founder'
 import ServiceCol from '../../components/servicecol/ServiceCol'
+import { Link } from 'react-router-dom'
 
 
 function About() {
@@ -25,17 +26,20 @@ function About() {
       <LogoMarque />
       <Founder />
 
+{/* diwise-uk--and global------- */}
       <div className="two-part parent">
         <div className="two-part-container container">
 
           <div className="two-part-left">
             <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis quia, magnam dolor quaerat culpa.</p>
-            <Link to='#'>Know More</Link>
+            <p className='two-part-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis quia, magnam dolor quaerat culpa.</p>
+            <Link className='cta' to='#'>Know More</Link>
           </div>
 
-          <div className="two-part-right">
-
+          <div className="two-part-left">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p className='two-part-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis quia, magnam dolor quaerat culpa.</p>
+            <Link className='cta' to='#'>Know More</Link>
           </div>
 
         </div>

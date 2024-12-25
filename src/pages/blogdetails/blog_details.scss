@@ -7,45 +7,129 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+
     .left {
-      width: 70%;
+      width: 65%;
       display: flex;
       flex-direction: column;
-      gap:10px;
+      gap: 10px;
+
       .blog-image {
         background: red;
         width: 100%;
         height: 350px;
         border-radius: 10px;
         position: relative;
-        .date{
-            position:absolute;
-            bottom:0;
-            right:20px;
-            background:var(--accent);
-            color:var(--white);
-            padding:20px 20px;
-            border-radius: 10px 10px 0px 0px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+
+        .date {
+          position: absolute;
+          bottom: 0;
+          right: 20px;
+          background: var(--accent);
+          color: var(--white);
+          padding: 20px 20px;
+          border-radius: 10px 10px 0px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
       }
-      .category-box{
+
+      .category-box {
         display: flex;
-        gap:20px;
-        .left-c,.middle,.right-c{
-            display: flex;
-            align-items: center;justify-content: center;
-            gap:10px;
+        gap: 20px;
+
+        .left-c,
+        .middle,
+        .right-c {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
         }
       }
-      .title{
-        font-size:30px;
+
+      .title {
+        font-size: 30px;
       }
     }
+
     .right {
-      width: 30%;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .search-box {
+
+        background-color: white;
+        padding: 15px 20px;
+        border-radius: 10px;
+        align-items: flex-end;
+
+        .search-blog-form {
+          input {
+            border: none;
+
+            &:focus {
+              outline: none; // Removes the focus outline
+              border: none; // Redundant but kept for consistency
+            }
+          }
+        }
+      }
+
+
+      .latest-post-box {
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .post-div {
+          display: flex;
+          gap: 10px;
+          align-items: stretch;
+
+          .post-img {
+            height: 100px;
+            width: 150px;
+            background: url('../../assets/hero/hero.jpg');
+          }
+        }
+      }
+
+      .category-box {
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        .category {
+          padding: 10px 20px;
+          background-color: var(--white);
+          border-radius: 5px;
+          display: flex;
+          justify-content: space-between;
+          transition: var(--med);
+
+          svg {
+
+            font-size: 30px;
+            color: var(--accent);
+            display: none;
+          }
+          &:hover{
+            border:1px solid black;
+            // padding: ;
+
+          svg{
+            display: block;
+          }
+          }
+        }
+      }
+
     }
   }
+
 }
