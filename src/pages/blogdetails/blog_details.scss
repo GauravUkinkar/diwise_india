@@ -5,15 +5,21 @@
 
   .blog-detail-cont {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     gap: 20px;
+
+    padding: 10px;
+    border-radius: 10px;
 
     .left {
       width: 65%;
       display: flex;
       flex-direction: column;
       gap: 10px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
 
       .blog-image {
         background: red;
@@ -62,13 +68,18 @@
       gap: 20px;
 
       .search-box {
-
         background-color: white;
         padding: 15px 20px;
         border-radius: 10px;
-        align-items: flex-end;
+        display: flex;
+        // align-items: flex-end;
+        justify-content: space-between;
 
         .search-blog-form {
+          display: flex;
+          // align-items: flex-end;
+          justify-content: space-between;
+          width: 100%;
           input {
             border: none;
 
@@ -86,6 +97,9 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        background: white;
+        border-radius: 10px;
+        padding: 10px;
 
         .post-div {
           display: flex;
@@ -96,17 +110,23 @@
             height: 100px;
             width: 150px;
             background: url('../../assets/hero/hero.jpg');
+            border-radius: 5px;
           }
         }
       }
 
       .category-box {
-        display:flex;
+        display: flex;
         flex-direction: column;
-        gap:10px;
+        gap: 10px;
+        background: white;
+        border-radius: 10px;
+        padding: 10px;
+
+
         .category {
           padding: 10px 20px;
-          background-color: var(--white);
+
           border-radius: 5px;
           display: flex;
           justify-content: space-between;
@@ -118,13 +138,15 @@
             color: var(--accent);
             display: none;
           }
-          &:hover{
-            border:1px solid black;
+
+          &:hover {
+            background-color: var(--white);
+            border: 1px solid black;
             // padding: ;
 
-          svg{
-            display: block;
-          }
+            svg {
+              display: block;
+            }
           }
         }
       }
