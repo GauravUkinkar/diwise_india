@@ -40,10 +40,10 @@ function Header() {
             <Link to="#" className="dropdown-toggle">Services</Link>
             <div className="dropdown-menu">
               <Link to="/businessLaunchpad">Business Launchpad</Link>
-              <Link to="/service2">Digital Marketing</Link>
-              <Link to="/service3">Branding and Design</Link>
-              <Link to="/service3">Public Relations</Link>
-              <Link to="/service3">Website Development</Link>
+              <Link to="/digitalMarketing">Digital Marketing</Link>
+              <Link to="/brandingAndDesign">Branding and Design</Link>
+              <Link to="/publicRelations">Public Relations</Link>
+              <Link to="/websiteDevelopment">Website Development</Link>
             </div>
           </div>
           <Link to="/blog">Blog</Link>

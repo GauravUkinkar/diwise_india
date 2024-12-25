@@ -18,6 +18,10 @@ import Scroll from "./components/scroll/Scroll";
 // AOS (Animate on Scroll)
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Digital from "./pages/digitalMarketing/Digital";
+import Branding from "./pages/branding/Branding";
+import Public from "./pages/public/Public";
+import Website from "./pages/website/Website";
 
 function App() {
   useEffect(() => {
@@ -38,6 +42,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/businessLaunchpad" element={<Business />} />
+          <Route path="/digitalMarketing" element={<Digital />} />
+          <Route path="/brandingAndDesign" element={<Branding />} />
+          <Route path="/publicRelations" element={<Public />} />
+          <Route path="/websiteDevelopment" element={<Website />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog_detail" element={<Blog_details />} />
           <Route path="/contact" element={<Contact />} />
