@@ -17,6 +17,7 @@ const Blog_details = () => {
               <div className="titlen">admin</div>
             </div>
             <div className="middle">
+              
               {" "}
               <div className="icon"><FaRegFolderOpen /></div>
               <div className="titlen">admin</div>
