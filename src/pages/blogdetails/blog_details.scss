@@ -82,11 +82,15 @@
           width: 100%;
           input {
             border: none;
+            width: 100%;
 
             &:focus {
               outline: none; // Removes the focus outline
               border: none; // Redundant but kept for consistency
             }
+          }
+          .search-in{
+            cursor: pointer;
           }
         }
       }
@@ -104,13 +108,16 @@
         .post-div {
           display: flex;
           gap: 10px;
-          align-items: stretch;
+          align-items: center;
 
           .post-img {
-            height: 100px;
-            width: 150px;
+            height: 70px;
+            width: 120px;
             background: url('../../assets/hero/hero.jpg');
             border-radius: 5px;
+          }
+          .latest-post-heading{
+            font-size: 16px;
           }
         }
       }
@@ -125,7 +132,7 @@
 
 
         .category {
-          padding: 10px 20px;
+          padding: 10px 5px;
 
           border-radius: 5px;
           display: flex;
@@ -139,7 +146,7 @@
             display: none;
           }
 
-          &:hover {
+          &:hover{
             background-color: var(--white);
             border: 1px solid black;
             // padding: ;

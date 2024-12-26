@@ -40,7 +40,7 @@ const Blog_details = () => {
           <div className="search-box">
             <form className="search-blog-form">
               <input type="text" />
-              <span><IoSearch/></span>
+              <span className="search-in"><IoSearch/></span>
             </form>
           </div>
 
@@ -48,15 +48,15 @@ const Blog_details = () => {
             <h3>Latest Post</h3>
             <div className="post-div">
               <div className="post-img bg-img-cover"></div>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
+              <h5 className="latest-post-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
             </div>
             <div className="post-div">
               <div className="post-img bg-img-cover"></div>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
+              <h5  className="latest-post-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
             </div>
             <div className="post-div">
               <div className="post-img bg-img-cover"></div>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
+              <h5 className="latest-post-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
             </div>
           </div>
           <div className="category-box">
@@ -66,11 +66,15 @@ const Blog_details = () => {
               <span><MdOutlineArrowRightAlt /></span>
             </div>
             <div className="category">
-              <h5>Web Development</h5>
+              <h5>Graphic Designing</h5>
               <span><MdOutlineArrowRightAlt /></span>
             </div>
             <div className="category">
-              <h5>Web Development</h5>
+              <h5>Technology</h5>
+              <span><MdOutlineArrowRightAlt /></span>
+            </div>
+            <div className="category">
+              <h5>Marketing</h5>
               <span><MdOutlineArrowRightAlt /></span>
             </div>
           </div>
