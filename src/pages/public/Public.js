@@ -3,6 +3,8 @@ import ServiceCol from '../../components/servicecol/ServiceCol'
 import { FaCalendarCheck, FaRegCalendarCheck } from "react-icons/fa";
 import TwoColumn from '../../components/twoColumn/TwoColumn';
 import img from "../../img/img.webp"
+import Hook from '../../components/hook/Hook'
+
 
 function Public() {
   return (
@@ -38,6 +40,7 @@ function Public() {
     
     
     />
+    <Hook/>
     
     
     

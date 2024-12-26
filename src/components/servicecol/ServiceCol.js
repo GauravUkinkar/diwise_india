@@ -7,15 +7,15 @@ function ServiceCol(props) {
             <div className="servicecol-container container">
                 {/* Left Section */}
                 <div className="servicecol-left">
-                    <h2>{props.left_heading} <span className="highlight">{props.highlight}</span></h2>
-                    <p>{props.para}</p>
-                    <a href="#" className="cta">{props.btn}</a>
+                    <h2 data-aos="fade-up" data-aos-delay="200">{props.left_heading} <span className="highlight">{props.highlight}</span></h2>
+                    <p data-aos="fade-up" data-aos-delay="400">{props.para}</p>
+                    <a href="#" className="cta" data-aos="fade-up" data-aos-delay="400">{props.btn}</a>
                 </div>
 
                 {/* Right Section */}
                 <div className="servicecol-right">
                     {/* Top Section */}
-                    <div className="servicecol-right-top">
+                    <div className="servicecol-right-top" data-aos="fade-left" data-aos-delay="200">
                         <div className="servicecol-right-top-left">
                             <div className="icon">{props.icon_top}</div>
                         </div>
@@ -26,7 +26,7 @@ function ServiceCol(props) {
                     </div>
 
                     {/* Middle Section */}
-                    <div className="servicecol-right-middle">
+                    <div className="servicecol-right-middle"  data-aos="fade-left" data-aos-delay="400">
                         <div className="servicecol-right-middle-left">
                             <div className="icon">{props.icon_middle}</div>
                         </div>
@@ -37,7 +37,7 @@ function ServiceCol(props) {
                     </div>
 
                     {/* Bottom Section */}
-                    <div className="servicecol-right-bottom">
+                    <div className="servicecol-right-bottom"  data-aos="fade-left" data-aos-delay="600">
                         <div className="servicecol-right-bottom-left">
                             <div className="icon">{props.icon_bottom}</div>
                         </div>
