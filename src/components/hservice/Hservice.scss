@@ -32,7 +32,7 @@
             position: relative;
             overflow: hidden;
             background-color: white;
-            transition: var(--slow);
+            transition: all 0.4s ease-in-out;
             border-radius: 5px;
 
             &::after {
@@ -45,7 +45,7 @@
                 background: var(--accent);
                 opacity: 0;
                 z-index: 1;
-                transition: var(--medd);
+                transition: all 0.4s ease-in-out;
             }
 
             .service-card-text-box {
