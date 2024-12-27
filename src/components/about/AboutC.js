@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./About.scss";
 import { IoIosArrowDown } from "react-icons/io";
+import img from "../../assets/hero/hero.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
 
@@ -12,8 +13,6 @@ function About() {
   const toggleAccordion = (index) => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
-
-
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration (ms)
@@ -27,8 +26,10 @@ function About() {
   <div className="about parent" >
     <div className="about-container container" >
     <div className="about-left">
-      <div className="img bg-img-cover" data-aos="fade-right" data-aos-delay="200"></div>
-      <h3 data-aos="fade-right" data-aos-delay="400">Lorem <span className='highlight'>ipsum</span></h3>
+      <div className="img bg-img-cover" data-aos="fade-right" data-aos-delay="200" data-aos-anchor=".about-container">
+      <img src={img}  />
+      </div>
+      <h3 data-aos="fade-right" data-aos-delay="400">About <span className='highlight'>Us</span></h3>
       <p data-aos="fade-right"  data-aos-delay="600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit commodi possimus ad officiis autem voluptatibus maiores distinctio quia veritatis aliquam vitae perspiciatis ab facilis tempore porro nobis inventore similique optio, deleniti quod esse.</p>
       <a href="" className="cta" data-aos="fade-right" data-aos-delay="200">Discover More</a>
 

@@ -31,13 +31,13 @@ function About() {
         <div className="two-part-container container">
 
           <div className="two-part-left">
-            <h3>Lorem ipsum dolor sit.</h3>
+            <h3>Diwise global</h3>
             <p className='two-part-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis quia, magnam dolor quaerat culpa.</p>
             <Link className='cta' to='#'>Know More</Link>
           </div>
 
           <div className="two-part-left">
-            <h3>Lorem ipsum dolor sit.</h3>
+            <h3>Diwise uk</h3>
             <p className='two-part-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis quia, magnam dolor quaerat culpa.</p>
             <Link className='cta' to='#'>Know More</Link>
           </div>
