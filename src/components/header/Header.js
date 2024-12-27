@@ -8,8 +8,7 @@ import { IoLocationOutline } from "react-icons/io5";
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isCanvasOpen, setIsCanvasOpen] = useState(false); // State to control the off-canvas
-
+  const [isCanvasOpen, setIsCanvasOpen] = useState(false); 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -24,7 +23,7 @@ function Header() {
   };
 
   const toggleCanvas = () => {
-    setIsCanvasOpen(!isCanvasOpen); // Toggle off-canvas visibility
+    setIsCanvasOpen(!isCanvasOpen); 
   };
 
   return (
@@ -62,39 +61,40 @@ function Header() {
           <div
             className="grid-icon bg-img-contain"
             type="button"
-            onClick={toggleCanvas} // Open/close the off-canvas
+            onClick={toggleCanvas} 
           ></div>
           <Link to="/contact" className="cta">Contact Us</Link>
         </div>
       </div>
 
-      <div className={`offcanvas offcanvas-end offcanvas-header-parent ${isCanvasOpen ? 'show' : ''}`}>
-        <div className="offcanvas-header">
-          <div className="canvas-logo bg-img-contain"></div>
-          <button
-            type="button"
-            className="btn-close close-canvas"
-            onClick={toggleCanvas} // Close the off-canvas
-          ></button>
-        </div>
-        <div className="offcanvas-body canvas-body">
-          <h2>About Us</h2>
-          <p>We work with forward-thinking companies to craft and produce impactful solutions through website & mobile app experiences...</p>
-          <h4>Contact us</h4>
-          <div className="icon-boxh">
-            <span className="iconsh"><MdOutlineMail /></span>
-            <p className="address">info@diwise.in</p>
-          </div>
-          <div className="icon-boxh">
-            <span className="iconsh"><HiOutlinePhone /></span>
-            <p className="address">+91 8482936866</p>
-          </div>
-          <div className="icon-boxh">
-            <span className="iconsh"><IoLocationOutline /></span>
-            <p className="address">Office No. 214-216, 10 Biz Park, Near Symbiosis Law College, Airport Road, Vimannagar, Pune- 411014</p>
-          </div>
-        </div>
+   <div className={`overlay ${isCanvasOpen ? 'show' : ''}`} onClick={toggleCanvas}></div>
+  <div className={`offcanvas offcanvas-end offcanvas-header-parent ${isCanvasOpen ? 'show' : ''}`}>
+    <div className="offcanvas-header">
+      <div className="canvas-logo bg-img-contain"></div>
+      <button
+        type="button"
+        className="btn-close close-canvas"
+        onClick={toggleCanvas}
+      ></button>
+    </div>
+    <div className="offcanvas-body canvas-body">
+      <h4>About Us</h4>
+      <p>We work with forward-thinking companies to craft and produce impactful solutions...</p>
+      <h4 className='contact-us'> Contact us</h4>
+      <div className="icon-boxh">
+        <span className="iconsh"><MdOutlineMail /></span>
+        <p className="address">info@diwise.in</p>
       </div>
+      <div className="icon-boxh">
+        <span className="iconsh"><HiOutlinePhone /></span>
+        <p className="address">+91 8482936866</p>
+      </div>
+      <div className="icon-boxh">
+        <span className="iconsh"><IoLocationOutline /></span>
+        <p className="address">Office No. 214-216, 10 Biz Park, Near Symbiosis Law College, Airport Road, Vimannagar, Pune- 411014</p>
+      </div>
+    </div>
+  </div>
     </>
   );
 }

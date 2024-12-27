@@ -18,7 +18,7 @@ function Herosection() {
                     spaceBetween={0}
                     centeredSlides={true}
                     autoplay={{
-                        delay: 250000,
+                        delay: 2500,
                         disableOnInteraction: false,
                     }}
                     pagination={{

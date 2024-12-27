@@ -23,10 +23,23 @@ import logo19 from "../../assets/logo/team.webp";
 import logo20 from "../../assets/logo/tij.webp";
 import logo22 from "../../assets/logo/travel.webp";
 
+import logo30 from "../../assets/logo/travel.webp";
+import logo31 from "../../assets/logo/akka.webp";
+import logo32 from "../../assets/logo/aligner.webp";
+import logo33 from "../../assets/logo/axonic.webp";
+import logo34 from "../../assets/logo/deeva.webp";
+import logo35 from "../../assets/logo/hcc.webp";
+import logo36 from "../../assets/logo/ml.webp";
+import logo37 from "../../assets/logo/nvm.webp";
+import logo38 from "../../assets/logo/onkar.webp";
+import logo39 from "../../assets/logo/team.webp";
+import logo40 from "../../assets/logo/tij.webp";
+import logo41 from "../../assets/logo/travel.webp";
+
 
 
 function LogoMarque() {
-  const data = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo21, logo12, logo13, logo14, logo15, logo16, logo17, logo18, logo19, logo20, logo22];
+  const data = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo21, logo12, logo13, logo14, logo15, logo16, logo17, logo18, logo19, logo20, logo22,logo30,logo31,logo32,logo33,logo34,logo35,logo36,logo37,logo38,logo39,logo40,logo41];
 
   return (
     <div className="logo-marque-parent">

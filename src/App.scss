@@ -15,6 +15,7 @@
   --backcolor1:#fde9dbea;
   --backcolor2:#fff8f2;
   --bgcolor1:#FAF7EF;
+  --transition: all 0.4s ease-in-out; 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap');
@@ -74,7 +75,7 @@ p {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 18px;
   color: grey;
-  line-height: 30px;
+  line-height: 25px;
   font-weight: 500;
   
   
