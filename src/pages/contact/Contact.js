@@ -11,7 +11,7 @@ function Contact()
 
         <>
         <div className="contact-parent parent">
-            <div className="contact-container   ">
+            <div className="contact-container container  ">
                 <div
                     className="contact-left">
                     <div className="left-cont">
