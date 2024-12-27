@@ -79,7 +79,8 @@ function Header() {
     </div>
     <div className="offcanvas-body canvas-body">
       <h4>About Us</h4>
-      <p>We work with forward-thinking companies to craft and produce impactful solutions...</p>
+      <p>DIwise is a PR Marketing Firm with expertise in research & technology that will understand your needs and surpass your expectations.
+      </p>
       <h4 className='contact-us'> Contact us</h4>
       <div className="icon-boxh">
         <span className="iconsh"><MdOutlineMail /></span>
