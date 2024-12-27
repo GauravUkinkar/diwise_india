@@ -12,8 +12,6 @@ function About() {
   const toggleAccordion = (index) => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
-
-
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration (ms)
