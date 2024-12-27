@@ -18,6 +18,9 @@ function Footer() {
 
   return (
     <>
+      
+
+      {/* footer */}
       <div id="footer-anchor"></div>
       <div className="footer parent bg-img-cover">
         <div className="footer-container container">
