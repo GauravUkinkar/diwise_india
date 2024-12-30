@@ -27,16 +27,16 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start; /* Align items to the start */
+            align-items: flex-start;
             gap: 40px;
 
             .servicecol-right-top,
             .servicecol-right-middle,
             .servicecol-right-bottom {
                 width: 100%;
-                display: flex; /* Ensure items are in a row */
-                flex-direction: row; /* Align children horizontally */
-                align-items: center; /* Vertically center-align items */
+                display: flex;
+                flex-direction: row;
+                align-items: center;
                 gap: 20px;
                 background-color: #ffffff;
                 border-radius: 20px;
@@ -45,43 +45,130 @@
                 .servicecol-right-top-left,
                 .servicecol-right-middle-left,
                 .servicecol-right-bottom-left {
-                    
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    
 
-                    
-                    
-
-                    .icon{
+                    .icon {
                         font-size: 30px;
                         color: var(--accent);
-                        
                     }
                 }
 
                 .servicecol-right-top-right,
                 .servicecol-right-middle-right,
                 .servicecol-right-bottom-right {
-                    flex: 1; /* Take up the remaining space for text */
+                    flex: 1;
                     display: flex;
-                    flex-direction: column; /* Text stacked vertically */
-                    justify-content: center;                   
+                    flex-direction: column;
+                    justify-content: center;
                     gap: 5px;
 
                     h3 {
-                        
                         font-size: 24px;
                         color: var(--textcolor1);
                     }
 
                     p {
-                        
                         font-size: 18px;
                         color: grey;
                     }
                 }
+            }
+        }
+    }
+
+    /* Tablet View */
+    @media (max-width: 768px) {
+        .servicecol-container {
+            flex-direction: column; /* Stack left and right sections vertically */
+            gap: 30px;
+        }
+
+        .servicecol-left {
+            width: 100% !important; /* Full width for tablets */
+            gap: 30px;
+            text-align: center;
+
+            .btn {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+    
+            a.cta {
+                text-align: center !important;
+                display: inline-block; /* Ensures proper button behavior */
+                margin: 0 auto; /* Centers the button horizontally */
+            }
+            
+            
+        }
+
+        .servicecol-right {
+            width: 100% !important; 
+            gap: 30px;
+
+            .servicecol-right-top,
+            .servicecol-right-middle,
+            .servicecol-right-bottom {
+                flex-direction: column; /* Stack items vertically */
+                text-align: left; /* Center-align text */
+                gap: 15px;
+                padding: 0px 20px;
+
+                .icon {
+                    font-size: 24px; /* Adjust icon size */
+                }
+
+                h3 {
+                    font-size: 20px; /* Adjust heading size */
+                }
+
+                p {
+                    font-size: 16px; /* Adjust paragraph size */
+                }
+            }
+        }
+    }
+
+    /* Mobile View */
+    @media (max-width: 480px) {
+        padding: 30px 10px; 
+        .servicecol-left,
+        .servicecol-right {
+            gap: 20px;
+        }
+
+        .servicecol-right-top,
+        .servicecol-right-middle,
+        .servicecol-right-bottom {
+            padding: 15px; /* Reduce padding */
+            border-radius: 15px;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+
+            h3{
+                text-align: center !important;
+                font-size: 24px !important;
+            }
+
+            p{
+                text-align: center !important;
+            }
+
+            .icon {
+                font-size: 20px; /* Further adjust icon size */
+            }
+
+            h3 {
+                font-size: 18px; /* Adjust heading size */
+            }
+
+            p {
+                font-size: 14px; /* Adjust paragraph size */
             }
         }
     }
