@@ -122,3 +122,96 @@
   }
 
 }
+
+
+/* Tablet view (max-width: 768px) */
+
+.about{
+  background: linear-gradient(to bottom, var(--backcolor1) 20%, white 80%) !important;
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column ;
+    align-items: center;
+    gap: 40px !important;
+    padding: 20px 10px;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100% !important;
+    padding: 0px 20px !important;
+    text-align: center;
+  }
+
+  a.cta {
+    text-align: center !important;
+    display: inline-block; /* Ensures proper button behavior */
+    margin: 0 auto; /* Centers the button horizontally */
+}
+
+ 
+
+  .about-left .img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .accordion {
+    .accordion-header {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+
+    .accordion-content {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+}
+
+/* Mobile view (max-width: 480px) */
+@media (max-width: 480px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 10px;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-left .img {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .about-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .accordion {
+    .accordion-header {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+
+    .accordion-content {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+}
