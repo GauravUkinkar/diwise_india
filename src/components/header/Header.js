@@ -30,7 +30,7 @@ function Header() {
     <>
       <div className={`header-parent parent ${isScrolled ? 'scrolled' : ''}`}>
         <div className="header-left">
-          <div className="logo bg-img-contain"></div>
+         <a href="/"> <div className="logo bg-img-contain"></div></a>
         </div>
 
         <div className="nav-links">
