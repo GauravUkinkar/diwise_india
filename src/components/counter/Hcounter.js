@@ -30,8 +30,8 @@ const Counter = ({ endValue, label, counter_text, icon, startCounting }) => {
 
   useEffect(() => {
       AOS.init({
-        duration: 1000, // Animation duration (ms)
-        easing: "ease-in-out", // Animation easing
+        duration: 1000, 
+        easing: "ease-in-out",
         once: true, // Whether the animation should happen only once
       });
     }, []);

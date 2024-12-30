@@ -1,6 +1,5 @@
 .hcounter-parent {
     padding: 100px 10px;
-
     .hcounter-container {
         padding: 10px;
         display: flex;
@@ -11,6 +10,9 @@
         border-radius: var(--unit);
         position: relative;
         .new {
+            align-items: center;
+            display: flex;
+            justify-content: center;
             .counter-box {
                 color: white !important;
                 display: flex;
@@ -21,7 +23,6 @@
                 padding: 20px;
                 // border: 1px solid red;
                 // z-index: 2;
-
                 &::after {
                     content: "";
                     position: absolute;
@@ -38,7 +39,6 @@
                     background-size: contain;
                     z-index: 88;
                 }
-
                 // gap: 10px;
                 .counter {
                     color: white;
@@ -47,20 +47,18 @@
                     padding-bottom: 10px;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                   justify-content: center;
                     
                 }
                 .hcounter-heading {
                     color: white;
                     text-align: center;
                 }
-
                 .hcounter-p {
                     color: rgba(255, 255, 255, 0.8);
                     text-align: center;
                 }
             }
-
             &:nth-child(3) {
                 .counter-box::after {
                     display: none;
@@ -68,6 +66,100 @@
             }
         }
     }
+}
+
+@media only screen and (max-width:1000px){
+
+    .hcounter-parent {
+     
+        .hcounter-container {
+            justify-content: center;
+            align-items: center;
+           
+            position: relative;
+            .new {
+                .counter-box {
+                   
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: -100%;
+                        /* Adjust distance from text */
+                        // left: 0;
+                        bottom: 0px;
+                        width: 240px;
+                        height: 100%;
+                        /* Height of scratch */
+                        background-image: url("../../assets/shape-counter.svg");
+                        /* Add a scratch SVG or PNG image here */
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        z-index: 88;
+                    }
+             
+                    .counter {
+                      
+                        font-size: 30px;
+                        font-weight: 700;
+                        
+                        
+                    }
+                    .hcounter-heading {
+                       font-size: 26px; 
+                    }
+                    .hcounter-p {
+                       
+                    }
+                }
+             
+            }
+        }
+    }
+    
+}
 
 
+@media only screen and (max-width:800px){
+.col-md-3{
+width: 40%;
+}
+    .hcounter-parent {
+     
+        .hcounter-container {
+           
+            position: relative;
+            flex-direction: column;
+            gap: 10px;
+            .new {
+
+                border-bottom: 2px solid var(--accent);
+                .counter-box {
+                    &::after {
+                    display: none;
+                    }
+                                                 
+                    .counter {
+                                           }
+                    .hcounter-heading {
+                       font-size: 26px; 
+                    }
+                    .hcounter-p {
+                       
+                    }
+                }
+
+                 &:nth-child(3) {
+                 border-bottom: none;
+                }
+             
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+    .col-md-3{
+        width: 80%;
+        }
 }
