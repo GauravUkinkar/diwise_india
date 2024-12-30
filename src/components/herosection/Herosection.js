@@ -18,18 +18,30 @@ function Herosection() {
                     spaceBetween={0}
                     centeredSlides={true}
                     autoplay={{
-                        delay: 2500,
+                        delay: 250000,
                         disableOnInteraction: false,
                     }}
                     pagination={{
                         clickable: true,
                     }}
+                   
                     navigation={false}
                     modules={[Autoplay, Pagination, Navigation]}
                     className="heroSwiper"
                 >
                     <SwiperSlide>
-                        <div className="overlay"></div>
+                    <div className="swiper-overlay"></div>
+                        <div className="slide slide-img1 bg-img-cover">
+                       
+                            <div className="slide-text-box container">
+                                <h2 className='slide-heading' data-aos="fade-up" data-aos-delay="200">We are <br />Digital Marketing<br /> <span className='highlight2' data-aos="fade-up" data-aos-delay="200">Creative Gigg</span></h2>
+                                <Link className='cta' data-aos="fade-up" data-aos-delay="400">Know More</Link>
+                            </div>
+                        </div>
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="swiper-overlay"></div>
                         <div className="slide slide-img1 bg-img-cover">
                             <div className="slide-text-box container">
                                 <h2 className='slide-heading' data-aos="fade-up" data-aos-delay="200">We are <br />Digital Marketing<br /> <span className='highlight2' data-aos="fade-up" data-aos-delay="200">Creative Gigg</span></h2>
@@ -39,17 +51,7 @@ function Herosection() {
 
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="overlay"></div>
-                        <div className="slide slide-img1 bg-img-cover">
-                            <div className="slide-text-box container">
-                                <h2 className='slide-heading' data-aos="fade-up" data-aos-delay="200">We are <br />Digital Marketing<br /> <span className='highlight2' data-aos="fade-up" data-aos-delay="200">Creative Gigg</span></h2>
-                                <Link className='cta' data-aos="fade-up" data-aos-delay="400">Know More</Link>
-                            </div>
-                        </div>
-
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="overlay"></div>
+                        <div className="swiper-overlay"></div>
                         <div className="slide slide-img1 bg-img-cover">
                             <div className="slide-text-box container">
                                 <h2 className='slide-heading' data-aos="fade-up" data-aos-delay="200">We are <br />Digital Marketing<br /> <span className='highlight2' data-aos="fade-up" data-aos-delay="200">Creative Gigg</span></h2>
