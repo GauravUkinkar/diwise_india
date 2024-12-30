@@ -6,6 +6,7 @@ import LogoMarque from '../../components/logoMarque/LogoMarque'
 import Founder from '../../components/founder/Founder'
 import ServiceCol from '../../components/servicecol/ServiceCol'
 import { Link } from 'react-router-dom'
+import './About.scss';
 
 
 function About() {
