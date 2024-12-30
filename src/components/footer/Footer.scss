@@ -1,7 +1,3 @@
-
-
-
-
 .footer {
     height: fit-content;
     padding: 50px 0;
@@ -126,6 +122,78 @@
     }
 }
   }
+
+/* Tablet view (max-width: 768px) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack footer sections vertically */
+    gap: 40px;
+    justify-content: cente !important;
+    align-items: center !important; /* Ensure content is centered horizontally */
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right,
+  .footer-last {
+    width: 100% !important; /* Make sections take full width */
+    text-align: center !important; /* Center align content on tablet */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* Align the items in the center horizontally */
+    justify-content: center !important; /* Center content vertically */
+  }
+
+  .footer-left img {
+    width: 20% !important; /* Adjust logo size for tablet */
+    object-fit: contain;
+  }
+
+  .footer-last .social-icons {
+    justify-content: center; /* Center social icons */
+    display: flex;
+    gap: 15px; /* Adjust gap between social icons */
+  }
+}
+
+/* Mobile view (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer-container {
+    flex-direction: column; /* Stack footer sections vertically */
+    gap: 40px !important;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right,
+  .footer-last {
+    width: 100%; /* Full width on mobile */
+    display: flex !important;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Ensure text is centered */
+  }
+
+  .footer-left img {
+    width: 50%; /* Adjust logo size for mobile */
+    object-fit: contain;
+  }
+
+  .footer-last .social-icons {
+    justify-content: center;
+    display: flex;
+    gap: 10px; /* Reduce gap between icons on mobile */
+  }
+
+  .footer-middle ul li a,
+  .footer-right ul li a {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+}
+
 
 
   
