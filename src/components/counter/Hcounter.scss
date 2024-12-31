@@ -124,9 +124,9 @@
 width: 40%;
 }
     .hcounter-parent {
-     
+    
         .hcounter-container {
-           
+            width: 85%;
             position: relative;
             flex-direction: column;
             gap: 10px;
@@ -162,4 +162,13 @@ width: 40%;
     .col-md-3{
         width: 80%;
         }
+
+
+        
+    .hcounter-parent {
+    
+        .hcounter-container {
+            width: 96%;
+        }
+    }
 }
