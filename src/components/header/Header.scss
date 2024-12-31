@@ -110,6 +110,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    transition: var(--transition);
 
     .grid-icon {
       height: 25px;
