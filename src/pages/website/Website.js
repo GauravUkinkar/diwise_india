@@ -10,9 +10,9 @@ function Website() {
     <>
        <TwoColumn 
     imageSrc={img}
-    heading="Public Relations and "
-    highlight="Outreach"    
-    para = "Our global PR services include media relations, press release distribution, and crisis management. We help you build and maintain a positive brand reputation across multiple markets, ensuring effective communication and crisis preparedness."
+    heading="Web and App "
+    highlight="Development"    
+    para = "We specialise in creating custom web and mobile applications that seamlessly blend stunning design with exceptional functionality. Our team is dedicated to delivering outstanding user experiences through intuitive interfaces, responsive designs, and optimised performance across all devices. By leveraging cutting-edge technology, industry best practices, and a deep understanding of user behavior, we craft digital solutions tailored to your business objectives. From dynamic websites to feature-rich mobile apps, our solutions are built for scalability, reliability, and global accessibility. Partner with us to transform your digital vision into a powerful, results-driven reality that drives growth and engagement."
     
     
     
@@ -22,19 +22,19 @@ function Website() {
 
 
     <ServiceCol
-    left_heading="Elevate Your Brand with Our "
-    highlight="PR Expertise"  
-    para = "Enhance your brand's reputation and reach a global audience with our strategic PR and media outreach services. Our team of PR professionals ensure your message is heard loud and clear across all markets."
-    btn = "Get Media Ready"
+    left_heading="DIwise Custom Web and App"
+    highlight="Solutions for Growth"  
+    para = "Our team of skilled developers crafts cutting-edge web and mobile applications. From sleek websites to powerful mobile apps, we ensure your digital presence is engaging, user-friendly, and aligned with your business goals."
+    btn = "Enhance Your Reach"
     icon_top = {<FaRegCalendarCheck />}
-    heading_top = "Media Relations"
-    para_top = "Build strong connections with influential media outlets to secure positive coverage and enhance your brand's visibility."
+    heading_top = "Custom Web Development"
+    para_top = "Create a website that perfectly reflects your brand identity. Our expert developers craft responsive, user-friendly designs for your audience."
     icon_middle = {<FaCalendarCheck />}
-    heading_middle = "Strategies Press Release Distribution"
-    para_middle = "Distribute targeted press releases that resonate with your audience and drive meaningful media coverage through our global networks."
+    heading_middle = "Mobile App Development"
+    para_middle = "Enhance your user experience with custom mobile apps. Our team develops innovative iOS and Android applications that deliver across all devices."
     icon_bottom = {<FaCalendarCheck />}
-    heading_bottom = "Crisis Communication Management"
-    para_bottom = "We provide swift and strategic communication to safeguard your reputation so that you are prepared during difficult times."
+    heading_bottom = "User Experience (UX) Design"
+    para_bottom = "Prioritise user satisfaction with our expert UX design services. We create intuitive functional interfaces for a positive user experience."
 
     
     
