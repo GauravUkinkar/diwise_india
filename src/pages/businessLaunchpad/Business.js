@@ -12,7 +12,7 @@ function Business() {
     imageSrc={img}
     heading="Business Formation and "
     highlight="Advisory"    
-    para = "Our experienced consultants provide expert guidance on setting up operations in international markets. We help you navigate legal compliance, develop effective market strategies, hire best of talent and optimise your operations for global success."
+    para = "Our experienced consultants offer comprehensive guidance for establishing and expanding operations in international markets. With deep expertise in global business dynamics, we assist in navigating complex legal compliance requirements, ensuring your operations adhere to local and international regulations. Our team works closely with you to develop effective market entry strategies, identify growth opportunities, and address potential challenges. We also support you in attracting and hiring top talent to build a strong workforce and optimise operational processes for maximum efficiency. Our goal is to empower your business for sustainable growth and long-term success on the global stage."
     
     
     
