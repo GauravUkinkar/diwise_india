@@ -40,8 +40,8 @@ function Contact() {
                     <div
                         className="contact-left">
                         <div className="left-cont">
-                            <h2>Contact Us</h2>
-                            <p className="contact-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h2>Let’s Connect and <span className='highlight'>Collaborate</span></h2>
+                            <p className="contact-p">Contact us to create impactful strategies for your brand's digital success.</p>
                             <form className='contact-form' onSubmit={onSubmit}>
                                 <input type='text' placeholder='Name' name='name'
                                     value={contactData.name}

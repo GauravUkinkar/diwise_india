@@ -34,7 +34,7 @@ function Herosection() {
                         <div className="slide slide-img1 bg-img-cover">
                        
                             <div className="slide-text-box container">
-                                <h2 className='slide-heading' data-aos="fade-up" data-aos-delay="200">We are <br />Digital Marketing<br /> <span className='highlight2' data-aos="fade-up" data-aos-delay="200">Creative Gigg</span></h2>
+                                <h2 className='slide-heading' data-aos="fade-up" data-aos-delay="200">DIwise Your <br />Step Towards<br /> <span className='highlight2' data-aos="fade-up" data-aos-delay="200">Digital Success</span></h2>
                                 <Link className='cta' data-aos="fade-up" data-aos-delay="400">Know More</Link>
                             </div>
                         </div>
@@ -44,7 +44,7 @@ function Herosection() {
                         <div className="swiper-overlay"></div>
                         <div className="slide slide-img1 bg-img-cover">
                             <div className="slide-text-box container">
-                                <h2 className='slide-heading' data-aos="fade-up" data-aos-delay="200">We are <br />Digital Marketing<br /> <span className='highlight2' data-aos="fade-up" data-aos-delay="200">Creative Gigg</span></h2>
+                                <h2 className='slide-heading' data-aos="fade-up" data-aos-delay="200">Your Strategic <br />Partner for<br /> <span className='highlight2' data-aos="fade-up" data-aos-delay="200">Digital Excellence</span></h2>
                                 <Link className='cta' data-aos="fade-up" data-aos-delay="400">Know More</Link>
                             </div>
                         </div>
@@ -54,7 +54,7 @@ function Herosection() {
                         <div className="swiper-overlay"></div>
                         <div className="slide slide-img1 bg-img-cover">
                             <div className="slide-text-box container">
-                                <h2 className='slide-heading' data-aos="fade-up" data-aos-delay="200">We are <br />Digital Marketing<br /> <span className='highlight2' data-aos="fade-up" data-aos-delay="200">Creative Gigg</span></h2>
+                                <h2 className='slide-heading' data-aos="fade-up" data-aos-delay="200">Innovative Strategies for<br /> Brands That Dare to<br /> <span className='highlight2' data-aos="fade-up" data-aos-delay="200">Stand Out!</span></h2>
                                 <Link className='cta' data-aos="fade-up" data-aos-delay="400">Know More</Link>
                             </div>
                         </div>

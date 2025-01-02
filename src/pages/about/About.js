@@ -14,9 +14,11 @@ function About() {
     <>
       <TwoColumn
         imageSrc={img}
-        heading="About Us"
+        heading="About DIwise"
         highlight="About"
-        para="DIwise is a PR Marketing Firm with expertise in research & technology that will understand your needs and surpass your expectations.Image & brand building of either an individual or organization is our forte. We conduct comprehensive research and in-depth analysis, and with our wide range of digital services, we create an impactful online presence for our clients.Our clients are varied and include individuals and organizations with a strong sense to impact society. Our primary focus is on individuals with political & social backgrounds who are ready to wield the power of social media. Our team of experts sits down to strategize a plan aligned with the client’s vision. We do in-depth market research and industry analysis to achieve outstanding results.The KPIs are set up for every client, and our team strives to excel every time."
+        para="DIwise is a PR and digital marketing firm specializing in research-driven strategies and innovative technology. We excel in building strong, impactful online identities for individuals and organisations through comprehensive research, in-depth analysis, and a wide range of digital services.
+Our diverse clientele includes individuals and organisations driven by a vision to create meaningful social impact, with a special focus on political and social leaders ready to harness the power of social media. Our expert team collaborates closely with clients to craft strategies aligned with their goals, ensuring measurable results through well-defined KPIs and an unwavering commitment to excellence.
+"
 
 
 
@@ -33,13 +35,13 @@ function About() {
 
           <div className="two-part-left">
             <h3>Diwise global</h3>
-            <p className='two-part-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis quia, magnam dolor quaerat culpa.</p>
+            <p className='two-part-p'>Based on a worldwide vision, DIwise Global serves as a dynamic business launchpad, offering expert digital marketing solutions to help brands thrive across international markets.</p>
             <Link className='cta' to='#'>Know More</Link>
           </div>
 
           <div className="two-part-left">
             <h3>Diwise uk</h3>
-            <p className='two-part-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis quia, magnam dolor quaerat culpa.</p>
+            <p className='two-part-p'>Positioned in the UK, DIwise specialises in tailored digital marketing strategies, acting as a launchpad for businesses to establish a strong market presence and drive growth.</p>
             <Link className='cta' to='#'>Know More</Link>
           </div>
 

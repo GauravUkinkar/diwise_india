@@ -22,7 +22,7 @@ function Hook() {
           data-aos="zoom-in-up"
         >
           <h2>
-            You Have an <span className="highlight">Idea?</span>
+            Got an <span className="highlight">Idea?</span>
           </h2>
           <a href="" className="cta">
             Tell Us

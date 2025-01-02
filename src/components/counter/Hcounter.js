@@ -82,23 +82,23 @@ const Hcounter = () => {
     <div className="hcounter-parent parent" ref={counterContainerRef}>
       <div className="hcounter-container container">
         <Counter
-          endValue={214}
+          endValue={100}
           label="Clients"
-          counter_text="Our company has 100 experts"
+          counter_text="We have served over 100+ clients worldwide"
           icon="fa-thumbs-o-up"
           startCounting={startCounting}
         />
         <Counter
-          endValue={10}
-          label="Years Of Experience"
-          counter_text="Our company has 100 experts"
+          endValue={214}
+          label="Projects"
+          counter_text="Completed 214+ successful projects for clients"
           icon="fa-group"
           startCounting={startCounting}
         />
         <Counter
-          endValue={1289}
-          label="Audience Reached"
-          counter_text="Our company has 100 experts"
+          endValue={25000}
+          label="Followers"
+          counter_text="Reached over 25k people 100+ through contents"
           icon="fa-shopping-cart"
           startCounting={startCounting}
         />
