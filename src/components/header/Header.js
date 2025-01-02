@@ -34,7 +34,7 @@ function Header() {
 
   useEffect(() => {
     const pageScroll = () => {
-      setIsScrolled(window.scrollY > 1200);
+      setIsScrolled(window.scrollY > 10);
       setMobilNav(false);
     };
     

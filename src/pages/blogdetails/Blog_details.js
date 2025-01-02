@@ -38,7 +38,7 @@ const Blog_details = () => {
     fetchBlog(); 
    }, [])
 
-   
+  
   // Declare the categories array first
   const categories = [
     "Web Development",
