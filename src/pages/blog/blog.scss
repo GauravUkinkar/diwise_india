@@ -20,14 +20,15 @@
         flex-direction: column;
         border-radius: 10px;
         background: white;
-        width: calc(100% / 3 - 10px);
+        // width: calc(100% / 3 - 10px);
+        width: 330px;
         overflow: hidden;
 
         .blog-card-top {
           position: relative;
 
           .img-overlay {
-            background: linear-gradient(to bottom, #f8f3f300, #0606068e);
+            background: linear-gradient(to bottom, #c40b0b00, #000000df);
             z-index: 6;
             position: absolute;
             height: 100%;
@@ -35,7 +36,7 @@
           }
 
           .bg-img {
-            mix-blend-mode: luminosity;
+            // mix-blend-mode: luminosity;
             width: 100%;
             height: 220px;
           }

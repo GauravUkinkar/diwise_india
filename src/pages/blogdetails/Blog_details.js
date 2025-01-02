@@ -1,44 +1,82 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./blog_details.scss";
-import { FaRegComment, FaRegFolderOpen, FaRegUser } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { MdCategory, MdOutlineArrowRightAlt } from "react-icons/md";
+
+import { useParams } from "react-router-dom";
+import axios from "axios";
+
 const Blog_details = () => {
+  const { id } = useParams();
+  const [blog, setBlog] = useState([]);
+  const [blogAll, setBlogAll]=useState([]);
 
 
-    // Declare the categories array first
-    const categories = [
-      "Web Development",
-      "Graphic Designing",
-      "Technology",
-      "Marketing",
-    ];
-  
-    // Initialize the active category with the second category
-    const [activeCategory, setActiveCategory] = useState(categories[1]);
+  const fetchBlogDetail = async () => {
+    try {
+      const response = await axios.get(`http://62.72.56.158:5000/blog/getBlogById/${id}`);
+      setBlog(response.data.response);
+      console.log(response, 'llllllllllllyy')
+
+    } catch (error) {
+      alert('Error Fetching Blog')
+    }
+  }
+  const fetchBlog = async () => {
+    try {
+      const response = await axios.get("http://62.72.56.158:5000/blog/getAllBlog");
+      setBlogAll(response.data.response);
+      console.log(response, 'llllllllllllyy')
+
+    } catch (error) {
+      alert('Error Fetching Blog')
+    }
+  }
+
+  useEffect(() => {
+    fetchBlogDetail();
+    fetchBlog(); 
+   }, [])
+
+   
+  // Declare the categories array first
+  const categories = [
+    "Web Development",
+    "Graphic Designing",
+    "Technology",
+    "Marketing",
+  ];
+
+  // Initialize the active category with the second category
+  const [activeCategory, setActiveCategory] = useState(categories[1]);
 
   return (
     <div className="blog-detail-parent parent">
-      <div className="blog-detail-cont container">
-        <div className="left">
-          <div className="blog-image">
-            <div className="date">
-              25 <span>NOV</span>
-            </div>
-          </div>
-          <div className="category-box">
-                       <div className="middle">
-              <div className="icon"><MdCategory /></div>
-              <div className="titlen">category</div>
-            </div>
 
+      <div className="blog-detail-cont container">
+        {blog.map((blog) => (
+          <div className="left">
+            <div className="blog-image bg-img-cover" 
+             style={{ backgroundImage: `url(http://62.72.56.158/documents/diwiseblog/${blog.image})` }}
+            >
+              <div className="date">
+                {blog.date}
+              </div>
+            </div>
+            <div className="category-box">
+              <div className="middle">
+                <div className="icon"><MdCategory /></div>
+                <div className="titlen">category</div>
+              </div>
+
+            </div>
+            <h3 className="title">
+              {blog.title}
+            </h3>
+            <p className="blog-content">{blog.description}</p>
           </div>
-          <h3 className="title">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Voluptatum, eligendi?
-          </h3>
-          <p className="blog-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, excepturi deleniti facere vel sapiente nobis molestiae consequuntur error voluptate labore quae dolorum nemo quasi aliquid dignissimos molestias quas quidem quia. Adipisci culpa earum excepturi molestias sint temporibus, natus maiores aliquam corporis vitae, illum, a animi nisi enim fugiat? Sed voluptatem hic harum culpa impedit, possimus alias sit quod tenetur quas nobis sunt voluptas ea rerum in iusto reiciendis velit earum perspiciatis veniam ipsum autem. expedita voluptatem nam, est soluta saepe</p>
-        </div>
+
+        ))}
         <div className="right">
           <div className="search-box">
             <form className="search-blog-form">
@@ -49,41 +87,48 @@ const Blog_details = () => {
 
           <div className="latest-post-box">
             <h3>Latest Post</h3>
-            <div className="post-div">
+            {blogAll.slice(0,3).map((blogItem, index) => (
+              <div key={index} className="post-div">
+                <div  className="post-img bg-img-cover" alt="img"
+                 style={{ backgroundImage: `url(http://62.72.56.158/documents/diwiseblog/${blogItem.image})` }}
+                > </div>
+                <h5 className="latest-post-heading">{blogItem.title}</h5>
+              </div>
+            ))}
+
+            {/* <div className="post-div">
               <div className="post-img bg-img-cover"></div>
               <h5 className="latest-post-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
             </div>
             <div className="post-div">
               <div className="post-img bg-img-cover"></div>
               <h5 className="latest-post-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
-            </div>
-            <div className="post-div">
-              <div className="post-img bg-img-cover"></div>
-              <h5 className="latest-post-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
-            </div>
+            </div> */}
           </div>
 
           <div className="category-box">
-      <h3 className="category-box-title">Category</h3>
-      {categories.map((category, index) => (
-        <div
-          key={index}
-          className={`category ${activeCategory === category ? "active" : ""}`}
-          onMouseEnter={() => setActiveCategory(category)} // Change active category on hover
-          onMouseLeave={() => setActiveCategory(categories[1])} // Revert to second category
-        >
-          <p className="cat-title">{category}</p>
-          <MdOutlineArrowRightAlt />
-        </div>
-      ))}
-    </div>
+            <h3 className="category-box-title">Category</h3>
+            {categories.map((category, index) => (
+              <div
+                key={index}
+                className={`category ${activeCategory === category ? "active" : ""}`}
+                onMouseEnter={() => setActiveCategory(category)} // Change active category on hover
+                onMouseLeave={() => setActiveCategory(categories[1])} // Revert to second category
+              >
+                <p className="cat-title">{category}</p>
+                <MdOutlineArrowRightAlt />
+              </div>
+            ))}
+          </div>
 
 
 
 
 
         </div>
+
       </div>
+  
     </div>
   );
 };

@@ -5,7 +5,7 @@ import "./App.scss";
 // Pages
 import About from "./pages/about/About";
 import Home from "./pages/home/Home";
-import Blog from "./pages/blog/Blog";
+
 import Blog_details from "./pages/blogdetails/Blog_details";
 import Business from "./pages/businessLaunchpad/Business";
 import Contact from "./pages/contact/Contact";
@@ -22,6 +22,7 @@ import Digital from "./pages/digitalMarketing/Digital";
 import Branding from "./pages/branding/Branding";
 import Public from "./pages/public/Public";
 import Website from "./pages/website/Website";
+import Blog from "./pages/blog/Blog";
 
 function App() {
   useEffect(() => {
@@ -47,7 +48,7 @@ function App() {
           <Route path="/publicRelations" element={<Public />} />
           <Route path="/websiteDevelopment" element={<Website />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog_detail" element={<Blog_details />} />
+          <Route path="/blog_detail/:id" element={<Blog_details />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
