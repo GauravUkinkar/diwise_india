@@ -133,6 +133,7 @@ width: 40%;
             .new {
 
                 border-bottom: 2px solid var(--accent);
+                transition: var(--transition);
                 .counter-box {
                     &::after {
                     display: none;

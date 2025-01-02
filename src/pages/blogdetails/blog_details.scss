@@ -192,9 +192,17 @@
 
 
 
+
+
+@media only screen and (max-width:1000px){
+  .blog-detail-parent{
+    padding:   50px 10px;
+
+  }}
+
 @media only screen and (max-width:800px){
   .blog-detail-parent{
-    padding:   100px 10px;
+ 
     .blog-detail-cont {
 flex-direction: column;
 

@@ -39,7 +39,8 @@ const Counter = ({ endValue, label, counter_text, icon, startCounting }) => {
 
 
   return (
-    <div className="col-md-3 new" ref={counterRef}>
+    <div className="col-md-3 new" ref={counterRef}
+    data-aos="fade-up" data-aos-delay="800">
       <div className="counter-box">
         <i className={`fa ${icon}`}></i>
         <span className="counter" data-aos="fade-up" data-aos-delay="200">{counter}<strong> +</strong></span>

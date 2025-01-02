@@ -122,14 +122,15 @@
 
 .offcanvas-header-parent {
   z-index: 9999;
+  transition: var(--transition);
 
   .offcanvas-header {
     display: flex;
     justify-content: space-between;
 
     .canvas-logo {
-      height: 70px;
-      width: 120px;
+      height: 75px;
+      width: 130px;
       background: url('../../assets/logo.jpg');
     }
   }
@@ -142,6 +143,7 @@
 
     .contact-us {
       padding-top: 20px;
+      padding-bottom: 10px;
     }
 
     .icon-boxh {
@@ -199,7 +201,7 @@
 
 .mobile-nav-parent {
   width: 100%;
-  
+
 
   .mobile-nav-comtainer {
     width: 100%;
@@ -208,9 +210,10 @@
     justify-content: space-between;
     padding: 10px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.242);
+    height: 60px;
 
     .nav-logo {
-      height: 70px;
+      height: 60px;
       width: 120px;
       background: url('../../assets/logo.jpg');
     }
@@ -239,11 +242,12 @@
     position: relative;
     font-family: "Domine", serif;
     height: 100svh;
-    // position: fixed;
+   justify-content: center;
     top: 0;
     left: 0;
     align-items: center;
-  
+    transition: var(--transition);
+
 
     a {
       text-decoration: none;
