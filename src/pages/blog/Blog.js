@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./blog.scss";
 import { FaRegFolderOpen } from "react-icons/fa";
-import axios from "axios";
+
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Blog = () => {
   const [visibleitemcount, setVisibleItemCount] = useState(3);

@@ -7,12 +7,15 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 import Header from '../header/Header';
+import ReactPlayer from 'react-player';
+// import video from '../../assets/hero/dvideo.webm'
+import video from '../../assets/hero/dvideo.webm'
 
 
 function Herosection() {
     return (
         <>
-            <div className="hero-parent parent">
+            {/* <div className="hero-parent parent">
 
                 <Swiper
                     spaceBetween={0}
@@ -62,8 +65,28 @@ function Herosection() {
                     </SwiperSlide>
 
                 </Swiper>
-            </div>
+            </div> */}
+
+
+<div className="herosection-parent">
+  <div style={{ width: '100%', height: '100vh' }} className="video-section">
+    <ReactPlayer
+      url={video}
+      playing={true}       // Video starts playing automatically
+      playsinline={true}   // Ensure inline playback on mobile devices
+      autoplay={true}      // Auto play the video
+      loop={true}          // Loop the video continuously
+      controls={false}     // Hide video controls
+      width="100%"         // Ensure it fills the full width
+      height="100%"        // Ensure it fills the full height
+      className="react-player"
+    />
+  </div>
+</div>
+
+
         </>
+
     )
 }
 
