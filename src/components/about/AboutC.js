@@ -33,7 +33,7 @@ function About() {
       </div>
       <h3 data-aos="fade-right" data-aos-delay="400">About <span className='highlight'>Us</span></h3>
       <p data-aos="fade-right"  data-aos-delay="600">DIwise is a PR and digital marketing firm specializing in research-driven strategies and innovative technology. We excel in building impactful online identities for individuals and organisations, delivering tailored solutions that align with client visions and surpass expectations. </p>
-      <a href="" className="cta" data-aos="fade-right" data-aos-delay="200">Discover More</a>
+      <a href="/about" className="cta" data-aos="fade-right" data-aos-delay="200">Discover More</a>
     </div>
     <div className="about-right" data-aos="fade-up" data-aos-delay="200">
       <h2 data-aos="fade-up" data-aos-delay="400">Why <span className='highlight'>Choose Us?</span></h2>

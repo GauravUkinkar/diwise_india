@@ -29,20 +29,20 @@ Our diverse clientele includes individuals and organisations driven by a vision 
       <LogoMarque />
       <Founder />
 
-{/* diwise-uk--and global------- */}
+      {/* diwise-uk--and global------- */}
       <div className="two-part parent">
         <div className="two-part-container container">
 
           <div className="two-part-left">
-            <h3>Diwise global</h3>
+            <h3>DIwise global</h3>
             <p className='two-part-p'>Based on a worldwide vision, DIwise Global serves as a dynamic business launchpad, offering expert digital marketing solutions to help brands thrive across international markets.</p>
-            <Link className='cta' to='#'>Know More</Link>
+            <Link className='cta btn2' to='https://diwiseglobal.com/' target='_blank'>Explore Now</Link>
           </div>
 
           <div className="two-part-left">
-            <h3>Diwise uk</h3>
+            <h3>DIwise uk</h3>
             <p className='two-part-p'>Positioned in the UK, DIwise specialises in tailored digital marketing strategies, acting as a launchpad for businesses to establish a strong market presence and drive growth.</p>
-            <Link className='cta' to='#'>Know More</Link>
+            <a className='cta' href='https://diwise.uk/' target='_blank'>Explore Now</a>
           </div>
 
         </div>

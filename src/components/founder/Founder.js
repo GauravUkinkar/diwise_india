@@ -13,7 +13,7 @@ function Founder() {
           <p className="description" data-aos="fade-up" data-aos-delay="200">
             As the visionary leader of DIwise, Prajakta Marwaha brings unparalleled expertise and a strategic mindset. Her deep understanding of digital marketing and innovative approach drives our team towards exceptional results. Her commitment to understanding client needs and building long-term partnerships ensures sustainable growth and success.
           </p>
-          <a href="#" className="cta" data-aos="fade-up" data-aos-delay="200">Let's Connect</a>
+          <a href="/contact" className="cta" data-aos="fade-up" data-aos-delay="200">Let's Connect</a>
         </div>
         <div className="founder-right bg-img-cover" data-aos="fade-leftnpm" data-aos-delay="200">
           <img src={pic} alt="Prajakta Marwaha" />

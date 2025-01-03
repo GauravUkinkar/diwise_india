@@ -107,35 +107,35 @@ function Footer() {
                 data-aos-delay="200"
                 data-aos-anchor="#footer-anchor"
               >
-                <a href="/faq">Business Launchpad</a>
+                <a href="/businessLaunchpad">Business Launchpad</a>
               </li>
               <li
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-anchor="#footer-anchor"
               >
-                <a href="/terms">Digital Marketing</a>
+                <a href="/digitalMarketing">Digital Marketing</a>
               </li>
               <li
                 data-aos="fade-up"
                 data-aos-delay="400"
                 data-aos-anchor="#footer-anchor"
               >
-                <a href="/disclaimer">Branding and Design</a>
+                <a href="/brandingAndDesign">Branding and Design</a>
               </li>
               <li
                 data-aos="fade-up"
                 data-aos-delay="500"
                 data-aos-anchor="#footer-anchor"
               >
-                <a href="/privacy-policy">Public Relations</a>
+                <a href="/publicRelations">Public Relations</a>
               </li>
               <li
                 data-aos="fade-up"
                 data-aos-delay="600"
                 data-aos-anchor="#footer-anchor"
               >
-                <a href="/privacy-policy">Website Development</a>
+                <a href="/websiteDevelopment">Website Development</a>
               </li>
             </ul>
           </div>

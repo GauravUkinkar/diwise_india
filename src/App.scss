@@ -6,8 +6,7 @@
   --black: #000;
   --white: #fff;
   --unit: 10px;
-  --quick: 0.3s all ease-out;
-  --  : 0.6s all ease-out;
+  --quick: 0.3s all ease-out;  
   --slow: 1s all ease-out;
   --bg-color: #fafafa;
   --footer-bg: #2f2e2e;
@@ -93,7 +92,6 @@ a{
   background: var(--accent);
   color: var(--white);
   border: none;
-  transition: var(--quick);
   border-radius: 50px;
   width: fit-content;
   text-decoration: none;
@@ -101,11 +99,11 @@ a{
   font-size: 18px;
   font-family: "Kumbh Sans", serif;
   font-weight: 700;
+  transition: all 0.3s ease !important; /* Smooth transition effect */
 
   &:hover {
-    scale: 1.1;
-    color: white;
-
+    scale: 1.1 !important;
+    color: white !important;
   }
 }
 

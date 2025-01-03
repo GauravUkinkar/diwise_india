@@ -9,7 +9,7 @@ function ServiceCol(props) {
                 <div className="servicecol-left">
                     <h2 data-aos="fade-up" data-aos-delay="200">{props.left_heading} <span className="highlight">{props.highlight}</span></h2>
                     <p data-aos="fade-up" data-aos-delay="400">{props.para}</p>
-                    <a href="#" className="cta btn" data-aos="fade-up" data-aos-delay="400">{props.btn}</a>
+                    <a href="#" className="cta" data-aos="fade-up" data-aos-delay="400">{props.btn}</a>
                 </div>
 
                 {/* Right Section */}

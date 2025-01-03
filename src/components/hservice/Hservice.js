@@ -65,7 +65,7 @@ function Hservice() {
                                     <div className="service-card-img  service-card-img1  bg-img-contain "></div>
                                     <h4 className='service-card-heading'>Business Launchpad</h4>
                                     <p className='s-card-p'>Expand your business globally. We offer comprehensive support, from developing market entry strategies to providing operational consulting.</p>
-                                    <Link className='service-btn-icon' ><PiArrowBendUpRight /></Link>
+                                    <Link to={'/businessLaunchpad'} className='service-btn-icon' ><PiArrowBendUpRight /></Link>
                                     
                                 </div>
 
@@ -77,7 +77,7 @@ function Hservice() {
                                     <div className="service-card-img  service-card-img2  bg-img-contain"></div>
                                     <h4 className='service-card-heading'>Digital Marketing</h4>
                                     <p className='s-card-p'>Elevate your online presence. From crafting engaging content and managing your social media, we'll drive global visibility and engagement.</p>
-                                    <Link className='service-btn-icon' ><PiArrowBendUpRight /></Link>
+                                    <Link to={'/digitalMarketing'} className='service-btn-icon' ><PiArrowBendUpRight /></Link>
                                 </div>
 
                             </div>
@@ -88,7 +88,7 @@ function Hservice() {
                                     <div className="service-card-img  service-card-img3  bg-img-contain"></div>
                                     <h4 className='service-card-heading'>Branding & Design</h4>
                                     <p className='s-card-p'>Make your brand unforgettable. Our team of creatives will design your logo, develop your brand story, and produce engaging multimedia content.</p>
-                                    <Link className='service-btn-icon' ><PiArrowBendUpRight /></Link>
+                                    <Link to={'/brandingAndDesign'} className='service-btn-icon' ><PiArrowBendUpRight /></Link>
                                 </div>
 
                             </div>
@@ -99,7 +99,7 @@ function Hservice() {
                                     <div className="service-card-img  service-card-img4  bg-img-contain"></div>
                                     <h4 className='service-card-heading'>Public Relation</h4>
                                     <p className='s-card-p'>Manage your reputation globally. We help you build and maintain a positive brand reputation, ensuring effective communication.</p>
-                                    <Link className='service-btn-icon' ><PiArrowBendUpRight /></Link>
+                                    <Link to={'/publicRelations'} className='service-btn-icon' ><PiArrowBendUpRight /></Link>
                                 </div>
 
                             </div>
@@ -112,7 +112,7 @@ function Hservice() {
                                     <p className='s-card-p'>Bring your digital vision to life. We specialise in creating user-friendly, responsive designs with the latest technology to meet your needs.
 
 </p>
-                                    <Link className='service-btn-icon' ><PiArrowBendUpRight /></Link>
+                                    <Link to={'/websiteDevelopment'} className='service-btn-icon' ><PiArrowBendUpRight /></Link>
                                 </div>
 
                             </div>
