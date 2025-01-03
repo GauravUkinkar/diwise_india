@@ -81,6 +81,9 @@
     height: 100vh;  /* Use 100vh for full viewport height */
     width: 100%;    /* Ensure full width */
   }
+  .mobile{
+    display: none;
+  }
   
   .video-section {
     width: 100%;    /* Full width */
@@ -103,3 +106,22 @@
     object-fit: cover;   /* Prevent distortion and maintain aspect ratio */
   }
   
+
+  @media only screen and (max-width:800px){
+    .herosection-parent{
+        .desktop{
+            display: none;
+        }
+        .mobile{
+            display: block;
+        }
+    }
+  }
+
+  @media only screen and (max-width:1000px){
+    .herosection-parent {
+        height: calc(100vh - 70px);  
+        width: 100%;   
+      }
+
+  }

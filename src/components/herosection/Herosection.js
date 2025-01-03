@@ -10,6 +10,7 @@ import Header from '../header/Header';
 import ReactPlayer from 'react-player';
 // import video from '../../assets/hero/dvideo.webm'
 import video from '../../assets/hero/dvideo.webm'
+import video2 from '../../assets/hero/mob-video.webm'
 
 
 function Herosection() {
@@ -69,19 +70,32 @@ function Herosection() {
 
 
 <div className="herosection-parent">
-  <div style={{ width: '100%', height: '100vh' }} className="video-section">
-    <ReactPlayer
-      url={video}
-      playing={true}       // Video starts playing automatically
-      playsinline={true}   // Ensure inline playback on mobile devices
-      autoplay={true}      // Auto play the video
-      loop={true}          // Loop the video continuously
-      controls={false}     // Hide video controls
-      width="100%"         // Ensure it fills the full width
-      height="100%"        // Ensure it fills the full height
-      className="react-player"
-    />
-  </div>
+    <div className="video-section desktop">
+        <ReactPlayer
+            url={video}
+            playing={true}       // Video starts playing automatically
+            playsinline={true}   // Ensure inline playback on mobile devices
+            muted={true}         // Mute video to comply with autoplay policies
+            loop={true}          // Loop video
+            controls={false}     // Hide player controls
+            width="100%"         // Full width
+            height="100%"        // Full height
+            className="react-player"
+        />
+    </div>
+    <div className="video-section mobile">
+        <ReactPlayer
+            url={video2}
+            playing={true}       // Video starts playing automatically
+            playsinline={true}   // Ensure inline playback on mobile devices
+            muted={true}         // Mute video to comply with autoplay policies
+            loop={true}          // Loop video
+            controls={false}     // Hide player controls
+            width="100%"         // Full width
+            height="100%"        // Full height
+            className="react-player"
+        />
+    </div>
 </div>
 
 
