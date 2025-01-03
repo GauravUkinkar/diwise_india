@@ -34,6 +34,7 @@ const Blog = () => {
   return (
     <div className="blog-parent parent">
       <div className="blog-cont container">
+        <h2>Blogs</h2>
         <div className="top">
           {blogData.slice(0, visibleitemcount).map((blog) => (
             <div key={blog.id} className="blog-card"
