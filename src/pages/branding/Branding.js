@@ -2,14 +2,18 @@ import React from 'react'
 import ServiceCol from '../../components/servicecol/ServiceCol'
 import { FaCalendarCheck, FaRegCalendarCheck } from "react-icons/fa";
 import TwoColumn from '../../components/twoColumn/TwoColumn';
-import img from "../../img/img.webp"
 import Hook from '../../components/hook/Hook'
+import video1 from "../../assets/service/prbranding.mp4";
 
 function Branding() {
   return (
     <>
      <TwoColumn 
-    imageSrc={img}
+    videoSrc={video1}
+    videoAlt="Branding Video"
+    autoPlay={true}
+    loop={true}
+    muted={true}
     heading="Branding and "
     highlight="Creative Services"    
     para = "Our expert branding team specialises in crafting strong, distinctive brand identities that resonate with audiences worldwide. We go beyond designing logos; we build comprehensive visual identities, impactful messaging, and engaging content that align seamlessly with your brand’s vision and values. From developing memorable logos to producing compelling digital and print assets, we ensure every brand touchpoint reflects consistency, clarity, and purpose. Our approach combines strategic insight with creative excellence to position your brand as a global leader. By fostering connections and enhancing brand recall, we aim to leave a lasting impression driving loyalty and success."

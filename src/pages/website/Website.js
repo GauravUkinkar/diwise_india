@@ -4,12 +4,17 @@ import { FaCalendarCheck, FaRegCalendarCheck } from "react-icons/fa";
 import TwoColumn from '../../components/twoColumn/TwoColumn';
 import img from "../../img/img.webp"
 import Hook from '../../components/hook/Hook'
+import video1 from "../../assets/service/WebDevelopment.mp4";
 
 function Website() {
   return (
     <>
        <TwoColumn 
-    imageSrc={img}
+    videoSrc={video1}
+        videoAlt="Website Video"
+        autoPlay={true}
+        loop={true}
+        muted={true}
     heading="Web and App "
     highlight="Development"    
     para = "We specialise in creating custom web and mobile applications that seamlessly blend stunning design with exceptional functionality. Our team is dedicated to delivering outstanding user experiences through intuitive interfaces, responsive designs, and optimised performance across all devices. By leveraging cutting-edge technology, industry best practices, and a deep understanding of user behavior, we craft digital solutions tailored to your business objectives. From dynamic websites to feature-rich mobile apps, our solutions are built for scalability, reliability, and global accessibility. Partner with us to transform your digital vision into a powerful, results-driven reality that drives growth and engagement."

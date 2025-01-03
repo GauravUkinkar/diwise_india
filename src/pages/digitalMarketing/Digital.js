@@ -3,15 +3,19 @@ import "./Digital.scss";
 import ServiceCol from '../../components/servicecol/ServiceCol'
 import { FaCalendarCheck, FaRegCalendarCheck } from "react-icons/fa";
 import TwoColumn from '../../components/twoColumn/TwoColumn';
-import img from "../../img/img.webp"
 import Hook from '../../components/hook/Hook'
+import video1 from "../../assets/service/DigitalMarketing.mp4";
 
 function Digital() {
   return (
     <>
 
 <TwoColumn 
-    imageSrc={img}
+    videoSrc={video1}
+                videoAlt="PR Video"
+                autoPlay={true}
+                loop={true}
+                muted={true}
     heading="Digital Marketing and "
     highlight="Search Engine Optimisation"    
     para = "Our comprehensive digital marketing strategies are tailored to help healthcare businesses thrive in a competitive digital landscape. From Search Engine Optimisation (SEO) and content marketing to social media management and paid advertising, we focus on enhancing your online visibility and driving meaningful engagement. Our data-driven approach ensures your brand reaches the right audience globally, increasing website traffic, generating quality leads, and improving conversion rates. With a team of experts utilising the latest tools and trends, we craft strategies that not only elevate your digital presence but also deliver measurable results for sustained growth."

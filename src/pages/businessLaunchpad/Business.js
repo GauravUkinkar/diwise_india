@@ -2,14 +2,18 @@ import React from 'react'
 import ServiceCol from '../../components/servicecol/ServiceCol'
 import { FaCalendarCheck, FaRegCalendarCheck } from "react-icons/fa";
 import TwoColumn from '../../components/twoColumn/TwoColumn';
-import img from "../../img/img.webp"
 import Hook from '../../components/hook/Hook'
+import video1 from "../../assets/service/Buissnesssetup.mp4";
 
 function Business() {
   return (
     <>
     <TwoColumn 
-    imageSrc={img}
+    videoSrc={video1}
+                videoAlt="PR Video"
+                autoPlay={true}
+                loop={true}
+                muted={true}
     heading="Business Formation and "
     highlight="Advisory"    
     para = "Our experienced consultants offer comprehensive guidance for establishing and expanding operations in international markets. With deep expertise in global business dynamics, we assist in navigating complex legal compliance requirements, ensuring your operations adhere to local and international regulations. Our team works closely with you to develop effective market entry strategies, identify growth opportunities, and address potential challenges. We also support you in attracting and hiring top talent to build a strong workforce and optimise operational processes for maximum efficiency. Our goal is to empower your business for sustainable growth and long-term success on the global stage."

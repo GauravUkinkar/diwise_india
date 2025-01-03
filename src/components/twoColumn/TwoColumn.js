@@ -21,14 +21,38 @@ function TwoColumn(props) {
     return <h2>{props.heading}</h2>;
   };
 
+  const renderMedia = () => {
+    if (props.videoSrc) {
+      return (
+        <video 
+          className="media" 
+          src={props.videoSrc} 
+          alt={props.videoAlt || "Video"} 
+          playsInline 
+          controls 
+          autoPlay={props.autoPlay || false} 
+          loop={props.loop || false} 
+          muted={props.muted || false}
+        />
+      );
+    } else if (props.imageSrc) {
+      return (
+        <img 
+          className="media" 
+          src={props.imageSrc} 
+          alt={props.imageAlt || "Image"} 
+        />
+      );
+    }
+    return null;
+  };
+
   return (
     <div className="twocolumn parent">
       <div className="twocolumn-container container">
         <div className="twocolumn-left" data-aos="fade-right" data-aos-delay="200">
-          <div className="img bg-img-cover">
-            {props.imageSrc && (
-              <img src={props.imageSrc} alt={props.imageAlt || "Image"} />
-            )}
+          <div className="media-wrapper bg-img-cover">
+            {renderMedia()}
           </div>
         </div>
         <div className="twocolumn-right" data-aos="fade-up" data-aos-delay="200">

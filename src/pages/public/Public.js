@@ -2,15 +2,20 @@ import React from 'react'
 import ServiceCol from '../../components/servicecol/ServiceCol'
 import { FaCalendarCheck, FaRegCalendarCheck } from "react-icons/fa";
 import TwoColumn from '../../components/twoColumn/TwoColumn';
-import img from "../../img/img.webp"
 import Hook from '../../components/hook/Hook'
+import video1 from "../../assets/service/PublicRelations.mp4";
 
 
 function Public() {
   return (
     <>
     <TwoColumn 
-    imageSrc={img}
+    videoSrc={video1}
+            videoAlt="PR Video"
+            autoPlay={true}
+            loop={true}
+            muted={true}
+ 
     heading="Public Relations and "
     highlight="Outreach"    
     para = "Our global PR services encompass media relations, press release distribution, crisis management, and strategic communication planning. We work closely with clients to craft compelling narratives that resonate with target audiences and build trust across diverse markets. Our team ensures your brand's message reaches the right platforms, fostering credibility and positive public perception. In times of crisis, we act swiftly with well-prepared strategies to mitigate risks and safeguard your brand's reputation. With a focus on transparency and consistency, we help your brand maintain a strong and reliable presence in an ever-evolving media landscape."
