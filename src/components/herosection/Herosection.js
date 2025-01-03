@@ -69,34 +69,34 @@ function Herosection() {
             </div> */}
 
 
-<div className="herosection-parent">
-    <div className="video-section desktop">
-        <ReactPlayer
-            url={video}
-            playing={true}       // Video starts playing automatically
-            playsinline={true}   // Ensure inline playback on mobile devices
-            muted={true}         // Mute video to comply with autoplay policies
-            loop={true}          // Loop video
-            controls={false}     // Hide player controls
-            width="100%"         // Full width
-            height="100%"        // Full height
-            className="react-player"
-        />
-    </div>
-    <div className="video-section mobile">
-        <ReactPlayer
-            url={video2}
-            playing={true}       // Video starts playing automatically
-            playsinline={true}   // Ensure inline playback on mobile devices
-            muted={true}         // Mute video to comply with autoplay policies
-            loop={true}          // Loop video
-            controls={false}     // Hide player controls
-            width="100%"         // Full width
-            height="100%"        // Full height
-            className="react-player"
-        />
-    </div>
-</div>
+            <div className="herosection-parent">
+                <div className="video-section desktop">
+                    <ReactPlayer
+                        url={video}
+                        playing={true}       // Video starts playing automatically
+                        playsinline={true}   // Ensure inline playback on mobile devices
+                        muted={true}         // Mute video to comply with autoplay policies
+                        loop={true}          // Loop video
+                        controls={false}     // Hide player controls
+                        width="100%"         // Full width
+                        height="100%"        // Full height
+                        className="react-player"
+                    />
+                </div>
+                <div className="video-section mobile">
+                    <ReactPlayer
+                        url={video2}
+                        playing={true}       // Video starts playing automatically
+                        playsinline={true}   // Ensure inline playback on mobile devices
+                        muted={true}         // Mute video to comply with autoplay policies
+                        loop={true}          // Loop video
+                        controls={false}     // Hide player controls
+                        width="100%"         // Full width
+                        height="100%"        // Full height
+                        className="react-player"
+                    />
+                </div>
+            </div>
 
 
         </>

@@ -79,7 +79,8 @@ const Hcounter = () => {
   }, []);
 
   return (
-    <div className="hcounter-parent parent" ref={counterContainerRef}>
+    <div className="hcounter-parent parent" ref={counterContainerRef}
+    data-aos="fade-up" data-aos-delay="800">
       <div className="hcounter-container container">
         <Counter
           endValue={100}
