@@ -19,22 +19,22 @@ function Header() {
   const [mobilenav, setMobilNav] = useState(false);
 
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setIsScrolled(window.scrollY > 22000);
-  //     setMobilNav(false);
-  //   };
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 22000);
+      setMobilNav(false);
+    };
     
 
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
 
 
   useEffect(() => {
     const pageScroll = () => {
-      setIsScrolled(window.scrollY > 30000);
+      setIsScrolled(window.scrollY > 10);
       setMobilNav(false);
     };
     
