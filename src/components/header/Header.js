@@ -24,7 +24,7 @@ function Header() {
       setIsScrolled(window.scrollY > 22000);
       setMobilNav(false);
     };
-    
+
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -37,7 +37,7 @@ function Header() {
       setIsScrolled(window.scrollY > 10);
       setMobilNav(false);
     };
-    
+
 
     window.addEventListener('scroll', pageScroll);
     return () => window.removeEventListener('scroll', pageScroll);
@@ -66,7 +66,7 @@ function Header() {
       setIsVisible(true);
     }
   }, [inView]);
-  
+
 
   return (
     <>
@@ -145,84 +145,84 @@ function Header() {
         <div className="mobile-nav-comtainer">
           <a href="/"> <div className="nav-logo bg-img-contain"></div></a>
 
-          { mobilenav ?  <span onClick={toggleMobileNav} className='menu-icon'><CgClose /></span> : 
-          <span onClick={toggleMobileNav} className='menu-icon'><TbMenu2 /></span> 
-         
+          {mobilenav ? <span onClick={toggleMobileNav} className='menu-icon'><CgClose /></span> :
+            <span onClick={toggleMobileNav} className='menu-icon'><TbMenu2 /></span>
+
           }
 
 
         </div>
 
         {mobilenav &&
-        <div className="nav-links">
-        <Link
-          to="/"
-          data-aos="fade-left"
-          data-aos-duration="500"
-          data-aos-delay="100"
-          onClick={toggleMobileNav}
-        >
-          Home
-        </Link>
-    
-        <Link
-          to="/about"
-          data-aos="fade-left"
-          data-aos-duration="500"
-          data-aos-delay="200"
-          onClick={toggleMobileNav}
-        >
-          About
-        </Link>
-    
-        <div
-          className="dropdown"
-          data-aos="fade-left"
-          data-aos-duration="500"
-          data-aos-delay="300"
-        >
-          <span className="dropdown-toggle" onClick={toggleDropdown}>
-            Services
-          </span>
-          <div className={`dropdown-menu ${isDropdownOpen ? 'open' : ''}`}>
-            <Link to="/businessLaunchpad" onClick={toggleMobileNav}>
-              Business Launchpad
+          <div className="nav-links">
+            <Link
+              to="/"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-delay="100"
+              onClick={toggleMobileNav}
+            >
+              Home
             </Link>
-            <Link to="/digitalMarketing" onClick={toggleMobileNav}>
-              Digital Marketing
+
+            <Link
+              to="/about"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-delay="200"
+              onClick={toggleMobileNav}
+            >
+              About
             </Link>
-            <Link to="/brandingAndDesign" onClick={toggleMobileNav}>
-              Branding and Design
+
+            <div
+              className="dropdown"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              <span className="dropdown-toggle" onClick={toggleDropdown}>
+                Services
+              </span>
+              <div className={`dropdown-menu ${isDropdownOpen ? 'open' : ''}`}>
+                <Link to="/businessLaunchpad" onClick={toggleMobileNav}>
+                  Business Launchpad
+                </Link>
+                <Link to="/digitalMarketing" onClick={toggleMobileNav}>
+                  Digital Marketing
+                </Link>
+                <Link to="/brandingAndDesign" onClick={toggleMobileNav}>
+                  Branding and Design
+                </Link>
+                <Link to="/publicRelations" onClick={toggleMobileNav}>
+                  Public Relations
+                </Link>
+                <Link to="/websiteDevelopment" onClick={toggleMobileNav}>
+                  Website Development
+                </Link>
+              </div>
+            </div>
+
+            <Link
+              to="/blog"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-delay="400"
+              onClick={toggleMobileNav}
+            >
+              Blog
             </Link>
-            <Link to="/publicRelations" onClick={toggleMobileNav}>
-              Public Relations
-            </Link>
-            <Link to="/websiteDevelopment" onClick={toggleMobileNav}>
-              Website Development
+
+            <Link
+              to="/contact"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-delay="500"
+              onClick={toggleMobileNav}
+            >
+              Contact
             </Link>
           </div>
-        </div>
-    
-        <Link
-          to="/blog"
-          data-aos="fade-left"
-          data-aos-duration="500"
-          data-aos-delay="400"
-          onClick={toggleMobileNav}
-        >
-          Blog
-        </Link>
-    
-        <Link
-          to="/contact"
-          data-aos="fade-left"
-          data-aos-duration="500"
-          data-aos-delay="500"
-          onClick={toggleMobileNav}
-        >
-          Contact
-        </Link>
-        </div>
         }
       </div>
     </>

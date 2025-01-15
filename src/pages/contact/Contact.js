@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import './Contact.scss';
 import { PiPhoneLight } from 'react-icons/pi';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { CiLocationOn } from 'react-icons/ci';
 import { AiOutlineMail, AiTwotoneMail } from 'react-icons/ai';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function Contact() {
     const [contactData, setContactData] = useState({
@@ -14,6 +16,17 @@ function Contact() {
         message: "",
 
     });
+
+
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+            once: true,     // Whether animation should happen only once
+            easing: 'ease-in-out', // Easing for the animation
+        });
+    }, []);
+
 
     const onSubmit = async (e) => {
         e.preventDefault();
@@ -34,14 +47,28 @@ function Contact() {
 
     return (
 
+
+
+
+
+
+
         <>
             <div className="contact-parent parent">
-                <div className="contact-container container  ">
+                <div className="contact-container container  " data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="500"
+                >
                     <div
                         className="contact-left">
                         <div className="left-cont">
-                            <h2 className='contact-heading'>Let’s Connect and <span className='highlight'>Collaborate</span></h2>
-                            <p className="contact-p">Contact us to create impactful strategies for your brand's digital success.</p>
+                            <h2 className='contact-heading'
+                                data-aos-duration="500"
+                                data-aos-delay="300">Let’s Connect and <span className='highlight'>Collaborate</span></h2>
+                            <p className="contact-p"
+                                data-aos-duration="500"
+                                data-aos-delay="500"
+                            >Contact us to create impactful strategies for your brand's digital success.</p>
                             <form className='contact-form' onSubmit={onSubmit}>
                                 <input type='text' placeholder='Name' name='name'
                                     value={contactData.name}
@@ -55,13 +82,13 @@ function Contact() {
                                 />
                                 <input type='tel' placeholder='Phone' name='contact'
                                     value={contactData.contact}
-                                    onChange={(e) => 
-                                        {
-                                            const value = e.target.value;
-                                            // Allow only numbers and limit to 10 characters
-                                            if (/^\d*$/.test(value)) {
-                                        setContactData({ ...contactData, contact: e.target.value })
-                                            }}}
+                                    onChange={(e) => {
+                                        const value = e.target.value;
+                                        // Allow only numbers and limit to 10 characters
+                                        if (/^\d*$/.test(value)) {
+                                            setContactData({ ...contactData, contact: e.target.value })
+                                        }
+                                    }}
                                     maxLength="10"
                                 />
                                 <textarea rows={3}
@@ -77,11 +104,17 @@ function Contact() {
                         </div>
                     </div>
 
-                    <div className="contact-right">
-                        <div className="orange-box"></div>
+                    <div className="contact-right" data-aos="fade-up"
+                        data-aos-delay="300"
+                        data-aos-duration="500">
+                        <div className="orange-box"
+                        ></div>
                         <div className="right-cont">
 
-                            <h3>Info</h3>
+                            <h3 data-aos="fade-up"
+                                data-aos-dalay="500"
+                                data-aos-duration="500"
+                            >Info</h3>
                             <div className="contact-icon-box">
                                 <span><AiOutlineMail /> </span><span>info@gmail.com</span>
                             </div>

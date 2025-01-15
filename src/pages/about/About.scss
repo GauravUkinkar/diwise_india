@@ -1,6 +1,6 @@
 .two-part {
     padding: 100px 10px;
-  
+  transition: var(--transition);
   
     .two-part-container {
       display: flex;
@@ -8,6 +8,7 @@
       .two-part-left{
         border-left: 4px solid var(--accent);
         padding-left: 20px;
+        transition: var(--transition);
         .two-part-p{
           padding: 10px 0px;
         }

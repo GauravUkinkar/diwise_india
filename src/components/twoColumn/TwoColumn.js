@@ -50,7 +50,7 @@ function TwoColumn(props) {
   return (
     <div className="twocolumn parent">
       <div className="twocolumn-container container">
-        <div className="twocolumn-left" data-aos="fade-right" data-aos-delay="200">
+        <div className="twocolumn-left" data-aos="fade-up" data-aos-delay="200">
           <div className="media-wrapper bg-img-cover">
             {renderMedia()}
           </div>

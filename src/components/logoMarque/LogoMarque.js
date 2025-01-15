@@ -42,7 +42,10 @@ function LogoMarque() {
   const data = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo21, logo12, logo13, logo14, logo15, logo16, logo17, logo18, logo19, logo20, logo22,logo30,logo31,logo32,logo33,logo34,logo35,logo36,logo37,logo38,logo39,logo40,logo41];
 
   return (
-    <div className="logo-marque-parent">
+    <div className="logo-marque-parent" 
+    data-aos='fade-up'
+    data-aos-delay="200"
+    >
       <div className="logo-marque-container">
         <div className="logo-marque-box" data-aos="zoom-in-up" data-aos-delay="200">
           {data.map((img, index) => (

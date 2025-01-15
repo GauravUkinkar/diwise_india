@@ -15,7 +15,7 @@ function Founder() {
           </p>
           <a href="/contact" className="cta" data-aos="fade-up" data-aos-delay="200">Let's Connect</a>
         </div>
-        <div className="founder-right bg-img-cover" data-aos="fade-leftnpm" data-aos-delay="200">
+        <div className="founder-right bg-img-cover" data-aos="fade-up" data-aos-delay="300">
           <img src={pic} alt="Prajakta Marwaha" />
         </div>
       </div>

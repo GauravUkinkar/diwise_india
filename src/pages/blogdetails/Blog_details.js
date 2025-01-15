@@ -108,14 +108,14 @@ const Blog_details = () => {
 
           <div className="category-box">
             <h3 className="category-box-title">Category</h3>
-            {categories.map((category, index) => (
+            {blogAll.map((category, index) => (
               <div
                 key={index}
                 className={`category ${activeCategory === category ? "active" : ""}`}
                 onMouseEnter={() => setActiveCategory(category)} // Change active category on hover
-                onMouseLeave={() => setActiveCategory(categories[1])} // Revert to second category
+                onMouseLeave={() => setActiveCategory(blogAll[1])} // Revert to second category
               >
-                <p className="cat-title">{category}</p>
+                <p className="cat-title">{category.category}</p>
                 <MdOutlineArrowRightAlt />
               </div>
             ))}
