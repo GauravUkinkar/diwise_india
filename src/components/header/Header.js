@@ -19,6 +19,9 @@ function Header() {
   const [mobilenav, setMobilNav] = useState(false);
 
 
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 22000);
@@ -76,8 +79,8 @@ function Header() {
         </div>
 
         <div className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <Link to="/" onClick={scrollToTop}>Home</Link>
+          <Link to="/about" onClick={scrollToTop}>About</Link>
           <div className="dropdown">
             <span
               className="dropdown-toggle"
@@ -88,15 +91,15 @@ function Header() {
             <div
               className={`dropdown-menu ${isDropdownOpen ? 'open' : ''}`}
             >
-              <Link to="/businessLaunchpad">Business Launchpad</Link>
-              <Link to="/digitalMarketing">Digital Marketing</Link>
-              <Link to="/brandingAndDesign">Branding and Design</Link>
-              <Link to="/publicRelations">Public Relations</Link>
-              <Link to="/websiteDevelopment">Website Development</Link>
+              <Link to="/businessLaunchpad" onClick={scrollToTop}>Business Launchpad</Link>
+              <Link to="/digitalMarketing"onClick={scrollToTop} >Digital Marketing</Link>
+              <Link to="/brandingAndDesign" onClick={scrollToTop}>Branding and Design</Link>
+              <Link to="/publicRelations" onClick={scrollToTop}>Public Relations</Link>
+              <Link to="/websiteDevelopment" onClick={scrollToTop}>Website Development</Link>
             </div>
           </div>
-          <Link to="/blog">Blog</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/blog" onClick={scrollToTop}>Blog</Link>
+          <Link to="/contact" onClick={scrollToTop}>Contact</Link>
         </div>
 
         <div className="contact-box">
@@ -105,7 +108,7 @@ function Header() {
             type="button"
             onClick={toggleCanvas}
           ></div>
-          <Link to="/contact" className="cta">Contact Us</Link>
+          <Link to="/contact" className="cta" onClick={scrollToTop}>Contact Us</Link>
         </div>
       </div>
 
@@ -120,22 +123,28 @@ function Header() {
           ></button>
         </div>
         <div className="offcanvas-body canvas-body">
-          <h4>About Us</h4>
-          <p>DIwise is a PR Marketing Firm with expertise in research & technology that will understand your needs and surpass your expectations.
+          <h4
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="500">About Us</h4>
+          <p data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="500">DIwise is a PR Marketing Firm with expertise in research & technology that will understand your needs and surpass your expectations.
           </p>
           <h4 className='contact-us'> Contact us</h4>
-          <div className="icon-boxh">
+          <a href="mailto:info@diwise.in" className="icon-boxh">
             <span className="iconsh"><MdOutlineMail /></span>
             <p className="address">info@diwise.in</p>
-          </div>
-          <div className="icon-boxh">
+          </a>
+          <a href="tel:+918482936866" className="icon-boxh">
             <span className="iconsh"><HiOutlinePhone /></span>
             <p className="address">+91 8482936866</p>
-          </div>
-          <div className="icon-boxh">
+          </a>
+          <a className="icon-boxh" href="https://www.google.com/maps/place/10+Biz+Park/@18.5752056,73.9098664,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c147b8b70951:0x8614c143f0b9c8c!8m2!3d18.5752056!4d73.9098664!16s%2Fg%2F11ft03mdm8?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank">
             <span className="iconsh"><IoLocationOutline /></span>
             <p className="address">Office No. 214-216, 10 Biz Park, Near Symbiosis Law College, Airport Road, Vimannagar, Pune- 411014</p>
-          </div>
+          </a>
         </div>
       </div>
 
@@ -161,6 +170,7 @@ function Header() {
               data-aos-duration="500"
               data-aos-delay="100"
               onClick={toggleMobileNav}
+          
             >
               Home
             </Link>
