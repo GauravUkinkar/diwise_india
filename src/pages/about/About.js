@@ -17,7 +17,7 @@ function About() {
         heading="About DIwise"
         highlight="About"
         para="DIwise is a PR and digital marketing firm specializing in research-driven strategies and innovative technology. We excel in building strong, impactful online identities for individuals and organisations through comprehensive research, in-depth analysis, and a wide range of digital services.
-Our diverse clientele includes individuals and organisations driven by a vision to create meaningful social impact, with a special focus on political and social leaders ready to harness the power of social media. Our expert team collaborates closely with clients to craft strategies aligned with their goals, ensuring measurable results through well-defined KPIs and an unwavering commitment to excellence.
+        Our diverse clientele includes individuals and organisations     driven by a vision to create meaningful social impact, with a special focus on political and social leaders ready to harness the power of social media. Our expert team collaborates closely with clients to craft strategies aligned with their goals, ensuring measurable results through well-defined KPIs and an unwavering commitment to excellence.
 "
       />
 

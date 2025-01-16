@@ -24,7 +24,7 @@ function Hook() {
           <h2>
             Got an <span className="highlight">Idea?</span>
           </h2>
-          <a href="" className="cta">
+          <a href="/contact" className="cta">
             Tell Us
           </a>
         </div>

@@ -18,7 +18,7 @@ function Footer() {
 
   return (
     <>
-      
+
 
       {/* footer */}
       <div id="footer-anchor"></div>
@@ -41,7 +41,8 @@ function Footer() {
               Say Hello!
             </p>
             <a
-              href="mailto:needhelp@site.com"
+              href="mailto:
+info@diwise.in"
               className="email-link"
               data-aos="fade-up"
               data-aos-delay="300" // Faster delay
