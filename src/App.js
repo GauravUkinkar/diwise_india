@@ -24,7 +24,6 @@ import Public from "./pages/public/Public";
 import Website from "./pages/website/Website";
 import Blog from "./pages/blog/Blog";
 
-
 function App() {
   useEffect(() => {
     // Initialize AOS for animations
@@ -34,9 +33,6 @@ function App() {
       once: true, // Whether the animation should happen only once
     });
   }, []);
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
 
   return (
     <div className="App">
@@ -46,11 +42,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/businessLaunchpad" element={<Business />}onClick={scrollToTop} />
-          <Route path="/digitalMarketing" element={<Digital />}onClick={scrollToTop} />
-          <Route path="/brandingAndDesign" element={<Branding />}onClick={scrollToTop} />
-          <Route path="/publicRelations" element={<Public />} onClick={scrollToTop} />
-          <Route path="/websiteDevelopment" element={<Website onClick={scrollToTop} /> }  />
+          <Route path="/businessLaunchpad" element={<Business />} />
+          <Route path="/digitalMarketing" element={<Digital />} />
+          <Route path="/brandingAndDesign" element={<Branding />} />
+          <Route path="/publicRelations" element={<Public />} />
+          <Route path="/websiteDevelopment" element={<Website />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog_detail/:id" element={<Blog_details />} />
           <Route path="/contact" element={<Contact />} />
