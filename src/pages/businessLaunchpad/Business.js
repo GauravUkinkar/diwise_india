@@ -27,7 +27,7 @@ function Business() {
 
     <ServiceCol
     left_heading="Propel Your Business to Global Heights with "
-    highlight="DIwise Global"  
+    highlight="DIwise "  
     para = "Our expert consulting services empower businesses to conquer international markets with confidence. From navigating legal complexities to developing effective market entry strategies, we provide comprehensive support that ensures your business thrives on a global scale."
     btn = "Consult With Us"
     icon_top = {<FaRegCalendarCheck />}

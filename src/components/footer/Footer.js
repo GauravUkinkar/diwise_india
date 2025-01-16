@@ -185,7 +185,7 @@ info@diwise.in"
             </div>
             <p>
               <a href="tel:+918482936866" className="tel-link">
-                +91 8482936866
+                +91  84829 36866
               </a>
             </p>
             <p>
@@ -195,8 +195,7 @@ info@diwise.in"
                 rel="noopener noreferrer"
                 className="map-link"
               >
-                Office no. 214-216, 10 Biz Park, Airport Road, Vimannagar, Pune-
-                411014
+                Office no. 214-216, 10 Biz Park, Airport Road, Vimannagar, Pune - 411014
               </a>
             </p>
           </div>

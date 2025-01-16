@@ -20,7 +20,7 @@ function Whychoose() {
                             <div className="why-choose-card-text-box">
                                 <div className="why-choose-card-img"></div>
                                 <h4 className=''>INTEGRITY</h4>
-                                <p>Honesty and fairness are the guidelines By which we measure all our actions. We dedicate ourselves to walking this moral high ground.
+                                <p>Honesty and fairness are the guidelines by which we measure all our actions. We dedicate ourselves to walking this moral high ground.
 
 </p>
                             </div>

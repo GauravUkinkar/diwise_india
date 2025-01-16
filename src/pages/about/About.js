@@ -16,7 +16,7 @@ function About() {
         imageSrc={img}
         heading="About DIwise"
         highlight="About"
-        para="DIwise is a PR and digital marketing firm specializing in research-driven strategies and innovative technology. We excel in building strong, impactful online identities for individuals and organisations through comprehensive research, in-depth analysis, and a wide range of digital services.
+        para="DIwise is a PR and digital marketing firm specialising in research-driven strategies and innovative technology. We excel in building strong, impactful online identities for individuals and organisations through comprehensive research, in-depth analysis, and a wide range of digital services.
         Our diverse clientele includes individuals and organisations     driven by a vision to create meaningful social impact, with a special focus on political and social leaders ready to harness the power of social media. Our expert team collaborates closely with clients to craft strategies aligned with their goals, ensuring measurable results through well-defined KPIs and an unwavering commitment to excellence.
 "
       />
@@ -36,7 +36,7 @@ function About() {
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duaration="500"
-            >DIwise global</h3>
+            >DIwise Global</h3>
             <p 
             data-aos="fade-up"
             data-aos-delay="500"
@@ -57,7 +57,7 @@ function About() {
             <h3
             data-aos="fade-up"
             data-aos-delay="900"
-            data-aos-duration="500">DIwise uk</h3>
+            data-aos-duration="500">DIwise Uk</h3>
             <p
             data-aos="fade-up"
             data-aos-delay="1000"

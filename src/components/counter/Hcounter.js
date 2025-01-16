@@ -99,7 +99,7 @@ const Hcounter = () => {
         <Counter
           endValue={25000}
           label="Followers"
-          counter_text="Reached over 25k people 100+ through contents"
+          counter_text="Reached over 25K people through 100+ contents"
           icon="fa-shopping-cart"
           startCounting={startCounting}
         />

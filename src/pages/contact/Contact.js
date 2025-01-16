@@ -120,11 +120,11 @@ function Contact() {
                             </div>
                             <div className="contact-icon-box">
                                 <span><PiPhoneLight /></span>
-                                <span> +91 9852146940</span>
+                                <span> +91 98521 46940</span>
                             </div>
                             <div className="contact-icon-box">
                                 <span><CiLocationOn /></span>
-                                <span className='office_address'>Office No. 214-216, 10 Biz Park,Near Symbiosis Law College, Airport Road,Vimannagar, Pune- 411014</span>
+                                <span className='office_address'>Office No. 214-216, 10 Biz Park, Near Symbiosis Law College,&nbsp; Airport Road, Vimannagar,  Pune - 411014</span>
                             </div>
                         </div>
                     </div>

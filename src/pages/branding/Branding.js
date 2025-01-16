@@ -27,7 +27,7 @@ function Branding() {
 
     <ServiceCol
     left_heading="Elevate Your Brand with"
-    highlight="DIwise Global"  
+    highlight="DIwise "  
     para = "Our expertise in branding and creative services ensures that your business stands out in a crowded marketplace. From crafting compelling brand identities to producing engaging multimedia content, we are dedicated to helping you make a lasting impression."
     btn = "Grow Your Brand"
     icon_top = {<FaRegCalendarCheck />}
