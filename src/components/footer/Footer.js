@@ -33,14 +33,14 @@ function Footer() {
               data-aos-delay="100" // Faster delay
               data-aos-anchor="#footer-anchor"
             />
-            {/* <p
+            <p
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-anchor="#footer-anchor"
             >
-              Say Hello!
-            </p> */}
-            <a
+              At DIwise, we specialise in building brands and elevating their digital presence through our expertise and exceptional services.
+            </p>
+            {/* <a
               href="mailto:info@diwise.in"
               className="email-link"
               data-aos="fade-up"
@@ -57,7 +57,7 @@ function Footer() {
               data-aos-anchor="#footer-anchor"
             >
               diwiseltd27@gmail.com
-            </a>
+            </a> */}
           </div>
 
           {/* Middle Section */}
