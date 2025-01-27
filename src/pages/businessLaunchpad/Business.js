@@ -4,10 +4,18 @@ import { FaCalendarCheck, FaRegCalendarCheck } from "react-icons/fa";
 import TwoColumn from '../../components/twoColumn/TwoColumn';
 import Hook from '../../components/hook/Hook'
 import video1 from "../../assets/service/Buissnesssetup.mp4";
+import { Helmet } from 'react-helmet';
 
 function Business() {
   return (
     <>
+
+<Helmet>
+        <title>Global Business Consulting Services | DIwise - Empowering Sustainable Growth</title>
+        <meta name="description" content="Unlock your business potential with DIwise! Our global consulting services include tailored market entry strategies, legal compliance, and operational optimization to help your business thrive internationally. Let’s grow your brand and digital presence with confidence." />
+        <meta name="keywords" content="global business consulting, market entry strategies, legal compliance, operational optimization, international business growth, brand building, digital presence, business advisory, global market strategies, sustainable growth, DIwise consulting, business formation services, international markets, Pune business consulting" />
+      </Helmet>
+
     <TwoColumn 
     videoSrc={video1}
                 videoAlt="PR Video"

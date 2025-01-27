@@ -4,6 +4,7 @@ import { FaRegFolderOpen } from "react-icons/fa";
 
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
   const [visibleitemcount, setVisibleItemCount] = useState(3);
@@ -33,6 +34,12 @@ const Blog = () => {
   }, []);
 
   return (
+    <>
+    <Helmet>
+    <title>Business & Digital Marketing Insights | DIwise Blog - Stay Updated with Expert Advice</title>
+    <meta name="description" content="Stay ahead with the latest trends and insights in business growth, digital marketing, branding, and technology. Explore expert tips, case studies, and strategies from DIwise's blog to help your business succeed online." />
+    <meta name="keywords" content="business blog, digital marketing blog, business growth insights, branding strategies, digital marketing tips, online marketing advice, business success blog, latest business trends, SEO tips, content marketing strategies, branding advice, DIwise blog, digital transformation, marketing and branding blog" />
+  </Helmet>
     <div className="blog-parent parent">
       <div className="blog-cont container">
         <h2>Blogs</h2>
@@ -82,6 +89,7 @@ const Blog = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 

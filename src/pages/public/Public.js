@@ -4,11 +4,17 @@ import { FaCalendarCheck, FaRegCalendarCheck } from "react-icons/fa";
 import TwoColumn from '../../components/twoColumn/TwoColumn';
 import Hook from '../../components/hook/Hook'
 import video1 from "../../assets/service/PublicRelations.mp4";
+import { Helmet } from 'react-helmet';
 
 
 function Public() {
   return (
     <>
+     <Helmet>
+        <title>Public Relations & Media Outreach Services | DIwise - Build Trust & Enhance Brand Reputation</title>
+        <meta name="description" content="Boost your brand's reputation with DIwise! Our expert PR services include media relations, press release distribution, and crisis communication management to ensure your brand message reaches the right audience and builds trust globally." />
+        <meta name="keywords" content="public relations services, media relations, press release distribution, crisis communication, brand reputation management, PR agency, strategic communication, media outreach, global PR services, brand visibility, crisis management services, public perception, PR experts in Pune, strategic PR solutions" />
+      </Helmet>
     <TwoColumn 
     videoSrc={video1}
             videoAlt="PR Video"

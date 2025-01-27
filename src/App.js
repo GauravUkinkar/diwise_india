@@ -1,11 +1,10 @@
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import "./App.scss";
 
 // Pages
 import About from "./pages/about/About";
 import Home from "./pages/home/Home";
-
 import Blog_details from "./pages/blogdetails/Blog_details";
 import Business from "./pages/businessLaunchpad/Business";
 import Contact from "./pages/contact/Contact";
@@ -25,6 +24,8 @@ import Website from "./pages/website/Website";
 import Blog from "./pages/blog/Blog";
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
     // Initialize AOS for animations
     AOS.init({
@@ -33,6 +34,15 @@ function App() {
       once: true, // Whether the animation should happen only once
     });
   }, []);
+
+  useEffect(() => {
+    // Track page view with Google Analytics on route change
+    if (window.gtag) {
+      window.gtag("config", "G-CYF2JE0E4H", {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location]); // This runs every time the route changes
 
   return (
     <div className="App">
@@ -54,9 +64,6 @@ function App() {
         <Footer />
       </BrowserRouter>
     </div>
-
-
-
   );
 }
 

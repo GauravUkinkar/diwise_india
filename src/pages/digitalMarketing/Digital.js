@@ -5,10 +5,16 @@ import { FaCalendarCheck, FaRegCalendarCheck } from "react-icons/fa";
 import TwoColumn from '../../components/twoColumn/TwoColumn';
 import Hook from '../../components/hook/Hook'
 import video1 from "../../assets/service/DigitalMarketing.mp4";
+import { Helmet } from 'react-helmet';
 
 function Digital() {
   return (
     <>
+     <Helmet>
+        <title>Digital Marketing & SEO Services for Healthcare | DIwise - Global Impact Strategies</title>
+        <meta name="description" content="Boost your healthcare business with DIwise! Our expert digital marketing services include advanced SEO, content marketing, and social media management to enhance online visibility, drive quality leads, and achieve sustained growth globally." />
+        <meta name="keywords" content="digital marketing services, SEO for healthcare, content marketing, social media management, global marketing strategies, healthcare marketing, online visibility, lead generation, data-driven marketing, DIwise digital marketing, advanced SEO techniques, content creation, international audience engagement, Pune digital marketing services" />
+      </Helmet>
 
 <TwoColumn 
     videoSrc={video1}

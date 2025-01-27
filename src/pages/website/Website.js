@@ -5,10 +5,17 @@ import TwoColumn from '../../components/twoColumn/TwoColumn';
 import img from "../../img/img.webp"
 import Hook from '../../components/hook/Hook'
 import video1 from "../../assets/service/WebDevelopment.mp4";
+import { Helmet } from 'react-helmet';
 
 function Website() {
   return (
     <>
+
+<Helmet>
+        <title>Custom Web & Mobile App Development Services | DIwise - Transform Your Digital Vision</title>
+        <meta name="description" content="Create powerful digital solutions with DIwise! Our custom web and mobile app development services focus on exceptional design, seamless functionality, and user-friendly experiences to help your business grow globally." />
+        <meta name="keywords" content="web development services, custom web development, mobile app development, iOS app development, Android app development, UX design, responsive web design, user experience design, mobile applications, digital solutions, scalable web apps, custom digital solutions, mobile app development company, web design agency in Pune" />
+      </Helmet>
        <TwoColumn 
     videoSrc={video1}
         videoAlt="Website Video"
@@ -18,10 +25,6 @@ function Website() {
     heading="Web and App "
     highlight="Development"    
     para = "We specialise in creating custom web and mobile applications that seamlessly blend stunning design with exceptional functionality. Our team is dedicated to delivering outstanding user experiences through intuitive interfaces, responsive designs, and optimised performance across all devices. By leveraging cutting-edge technology, industry best practices, and a deep understanding of user behaviour, we craft digital solutions tailored to your business objectives. From dynamic websites to feature-rich mobile apps, our solutions are built for scalability, reliability, and global accessibility. Partner with us to transform your digital vision into a powerful, results-driven reality that drives growth and engagement."
-    
-    
-    
-    
     
     /> 
 
