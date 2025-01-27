@@ -116,15 +116,18 @@ function Contact() {
                                 data-aos-duration="500"
                             >Info</h3>
                             <div className="contact-icon-box">
-                                <span><AiOutlineMail /> </span><span>info@gmail.com</span>
+                               <a href="mailto:info@gmail.com"> <span><AiOutlineMail /> </span><span>info@gmail.com</span></a>
                             </div>
                             <div className="contact-icon-box">
-                                <span><PiPhoneLight /></span>
-                                <span> +91 98521 46940</span>
+                               <a href="mailto: diwiseltd27@gmail.com"> <span><AiOutlineMail /> </span><span> diwiseltd27@gmail.com</span></a>
                             </div>
                             <div className="contact-icon-box">
-                                <span><CiLocationOn /></span>
-                                <span className='office_address'>Office No. 214-216, 10 Biz Park, Near Symbiosis Law College,&nbsp; Airport Road, Vimannagar,  Pune - 411014</span>
+                               <a href="tel:+91 98521 46940"> <span><PiPhoneLight /></span>
+                               <span> +91 98521 46940</span></a>
+                            </div>
+                            <div className="contact-icon-box">
+                               <a href="https://www.google.com/maps/place/10+Biz+Park/@18.5752055,73.9072754,17z/data=!4m7!3m6!1s0x3bc2c147b8b70951:0x8614c143f0b9c8c!8m2!3d18.5752056!4d73.9098664!15sCiVvZmZpY2UgTm86MjE0IDEwIEJpeiBQYXJrIHZpbWFuIG5hZ2FyWiciJW9mZmljZSBubyAyMTQgMTAgYml6IHBhcmsgdmltYW4gbmFnYXKSARpyZXRhaWxfc3BhY2VfcmVudGFsX2FnZW5jeZoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VST05qZFFUM0pCUlJBQuABAA!16s%2Fg%2F11ft03mdm8?entry=tts&g_ep=EgoyMDI0MDUwOC4wKgBIAVAD" target='_blank'> <span><CiLocationOn /></span>
+                               <span className='office_address'>Office No. 214-216, 10 Biz Park, Near Symbiosis Law College,&nbsp; Airport Road, Vimannagar,  Pune - 411014</span></a>
                             </div>
                         </div>
                     </div>

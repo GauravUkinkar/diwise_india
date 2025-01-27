@@ -45,7 +45,7 @@ const Blog = () => {
                 <div className="img-overlay"></div>
                   <div
                     className="bg-img bg-img-cover"
-                    style={{ backgroundImage: `url(http://62.72.56.158/documents/diwiseblog/${blog.image})` }}
+                    style={{ backgroundImage: `url(http://62.72.56.158/images/diwiseblog/${blog.image})` }}
                   ></div>
                 <div className="category-date-box">
                   <div className="category-title-box">

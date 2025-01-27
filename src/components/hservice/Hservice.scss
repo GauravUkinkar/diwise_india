@@ -72,6 +72,11 @@
                     height: 70px;
                     transition: var(--medd);
                 }
+                .service-card-img1{
+                    width: 200px;
+                    height: 70px;
+                    transition: var(--medd);
+                }
 
                 .s-card-p {
                     // color: rgb(0, 0, 0) !important;
@@ -88,11 +93,13 @@
                 }
 
                 .service-card-img3 {
-                    background: url('../../assets/imgsvg.svg');
+                    background: url('../../assets/service/Branding-&-Design.png');
+                   
                 }
 
                 .service-card-img4 {
-                    background: url('../../assets/imgsvg.svg');
+                    background: url('../../assets/service/Public-Relation.png');
+                  
                 }
 
                 .service-card-img5 {

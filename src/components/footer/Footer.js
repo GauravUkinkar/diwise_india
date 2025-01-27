@@ -33,22 +33,30 @@ function Footer() {
               data-aos-delay="100" // Faster delay
               data-aos-anchor="#footer-anchor"
             />
-            <p
+            {/* <p
               data-aos="fade-up"
-              data-aos-delay="200" // Faster delay
+              data-aos-delay="200"
               data-aos-anchor="#footer-anchor"
             >
               Say Hello!
-            </p>
+            </p> */}
             <a
-              href="mailto:
-info@diwise.in"
+              href="mailto:info@diwise.in"
               className="email-link"
               data-aos="fade-up"
               data-aos-delay="300" // Faster delay
               data-aos-anchor="#footer-anchor"
             >
-              test@diwise.in
+              info@diwise.in
+            </a>
+            <a
+              href="mailto: diwiseltd27@gmail.com"
+              className="email-link"
+              data-aos="fade-up"
+              data-aos-delay="300" // Faster delay
+              data-aos-anchor="#footer-anchor"
+            >
+              diwiseltd27@gmail.com
             </a>
           </div>
 
@@ -185,7 +193,7 @@ info@diwise.in"
             </div>
             <p>
               <a href="tel:+918482936866" className="tel-link">
-                +91  84829 36866
+                +91 84829 36866
               </a>
             </p>
             <p>
