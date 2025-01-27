@@ -57,7 +57,7 @@ const Blog_details = () => {
         {blog.map((blog) => (
           <div className="left">
             <div className="blog-image bg-img-cover" 
-             style={{ backgroundImage: `url(http://62.72.56.158/documents/diwiseblog/${blog.image})` }}
+             style={{ backgroundImage: `url(http://62.72.56.158/images/diwiseblog/${blog.image})` }}
             >
               <div className="date">
                 {blog.date}
