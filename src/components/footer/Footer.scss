@@ -1,11 +1,13 @@
 .footer {
     height: fit-content;
-    padding: 50px 0;
+    padding: 30px 10px 10px 10px;
     background: url('../../assets/footer-bg.webp');
     color: white;
-   
+   display: flex;
+   flex-direction: column;
   
     .footer-container {
+
       height: 100%;
       width: 100%;
       display: flex;
@@ -120,6 +122,29 @@
         }
       }
     }
+}
+.footer-bottom
+{
+border-top: 1px solid rgba(255, 255, 255, 0.351);
+display: flex;
+justify-content: space-between;
+padding-top: 10px;
+
+.f-p{
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.777);
+  }
+  .fb-p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.777);
+    display: flex;
+    gap:20px;
+    text-decoration: none !important;
+    a{
+      text-decoration: none !important;
+      color: rgba(255, 255, 255, 0.777);
+    }
+  }
 }
   }
 

@@ -23,6 +23,8 @@ import Public from "./pages/public/Public";
 import Website from "./pages/website/Website";
 import Blog from "./pages/blog/Blog";
 import Fourzero from "./pages/fouro/Fourzero";
+import Privacy from "./pages/privacy/Privacy";
+import Termscondition from "./pages/terms/Termscondition";
 
 function App() {
   // const location = useLocation();
@@ -61,6 +63,8 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog_detail/:id" element={<Blog_details />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacypolicy" element={<Privacy/>} />
+          <Route path ="/termsandconditions" element={<Termscondition/>} />
           <Route  path="*" element={<Fourzero/>} />
         </Routes>
         <Footer />
