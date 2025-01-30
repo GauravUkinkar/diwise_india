@@ -5,6 +5,9 @@ import TwoColumn from '../../components/twoColumn/TwoColumn';
 import Hook from '../../components/hook/Hook'
 import video1 from "../../assets/service/PublicRelations.mp4";
 import { Helmet } from 'react-helmet';
+import img1 from "../../assets/service/public/Crisis-Communication-Management.png"
+import img2 from '../../assets/service/public/Media-Relations.png'
+import img3 from '../../assets/service/public/Strategies-Press-Release-Distribution.png'
 
 
 function Public() {
@@ -38,13 +41,13 @@ function Public() {
     highlight="PR Expertise"  
     para = "Enhance your brand's reputation and reach a global audience with our strategic PR and media outreach services. Our team of PR professionals ensure your message is heard loud and clear across all markets."
     btn = "Get Media Ready"
-    icon_top = {<FaRegCalendarCheck />}
+    icon_top = {img2}
     heading_top = "Media Relations"
     para_top = "Build strong connections with influential media outlets to secure positive coverage and enhance your brand's visibility."
-    icon_middle = {<FaCalendarCheck />}
+    icon_middle = {img3}
     heading_middle = "Strategies Press Release Distribution"
     para_middle = "Distribute targeted press releases that resonate with your audience and drive meaningful media coverage through our global networks."
-    icon_bottom = {<FaCalendarCheck />}
+    icon_bottom = {img1}
     heading_bottom = "Crisis Communication Management"
     para_bottom = "We provide swift and strategic communication to safeguard your reputation so that you are prepared during difficult times."
 

@@ -22,9 +22,10 @@ import Branding from "./pages/branding/Branding";
 import Public from "./pages/public/Public";
 import Website from "./pages/website/Website";
 import Blog from "./pages/blog/Blog";
+import Fourzero from "./pages/fouro/Fourzero";
 
 function App() {
-  const location = useLocation();
+  // const location = useLocation();
 
   useEffect(() => {
     // Initialize AOS for animations
@@ -35,14 +36,14 @@ function App() {
     });
   }, []);
 
-  useEffect(() => {
-    // Track page view with Google Analytics on route change
-    if (window.gtag) {
-      window.gtag("config", "G-CYF2JE0E4H", {
-        page_path: location.pathname + location.search,
-      });
-    }
-  }, [location]); // This runs every time the route changes
+  // useEffect(() => {
+    
+  //   if (window.gtag) {
+  //     window.gtag("config", "G-CYF2JE0E4H", {
+  //       page_path: location.pathname + location.search,
+  //     });
+  //   }
+  // }, [location]); 
 
   return (
     <div className="App">
@@ -60,6 +61,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog_detail/:id" element={<Blog_details />} />
           <Route path="/contact" element={<Contact />} />
+          <Route  path="*" element={<Fourzero/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

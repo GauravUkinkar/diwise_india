@@ -5,6 +5,9 @@ import TwoColumn from '../../components/twoColumn/TwoColumn';
 import Hook from '../../components/hook/Hook'
 import video1 from "../../assets/service/prbranding.mp4";
 import { Helmet } from 'react-helmet';
+import img1 from "../../assets/service/brand/Brand-Strategy.png"
+import img2 from "../../assets/service/brand/Content-Creation.png"
+import img3 from '../../assets/service/brand/Logo-design.png'
 
 function Branding() {
   return (
@@ -37,13 +40,13 @@ function Branding() {
     highlight="DIwise "  
     para = "Our expertise in branding and creative services ensures that your business stands out in a crowded marketplace. From crafting compelling brand identities to producing engaging multimedia content, we are dedicated to helping you make a lasting impression."
     btn = "Grow Your Brand"
-    icon_top = {<FaRegCalendarCheck />}
+    icon_top = {img1}
     heading_top = "Brand Strategy"
     para_top = "Our experts will help you develop a comprehensive brand strategy. We'll create a unique brand identity that sets you apart."
-    icon_middle = {<FaCalendarCheck />}
+    icon_middle = {img3}
     heading_middle = "Logo Design"
     para_middle = "We'll design a memorable and visually appealing logo that captures the essence of your brand along with brand guidelines."
-    icon_bottom = {<FaCalendarCheck />}
+    icon_bottom = {img2}
     heading_bottom = "Content Creation"
     para_bottom = "Our creative team will produce high-quality content that resonates with your target audience like copywriting, design, and multimedia services."
 

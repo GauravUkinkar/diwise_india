@@ -22,7 +22,9 @@ function ServiceCol(props) {
                     {/* Top Section */}
                     <div className="servicecol-right-top" data-aos="fade-up" data-aos-delay="200">
                         <div className="servicecol-right-top-left">
-                            <div className="icon">{props.icon_top}</div>
+                        <div className="icon">
+                                {props.icon_top && <img src={props.icon_top} alt="Top Icon" className='icon-img' />}
+                            </div>
                         </div>
                         <div className="servicecol-right-top-right">
                             <h3>{props.heading_top}</h3>
@@ -34,7 +36,9 @@ function ServiceCol(props) {
                     <div className="servicecol-right-middle" data-aos-anchor="#servicee" data-aos="fade-up" data-aos-delay="400"
                     >
                         <div className="servicecol-right-middle-left">
-                            <div className="icon">{props.icon_middle}</div>
+                        <div className="icon">
+                                {props.icon_middle && <img src={props.icon_middle} alt="Top Icon" className='icon-img' />}
+                            </div>
                         </div>
                         <div className="servicecol-right-middle-right">
                             <h3>{props.heading_middle}</h3>
@@ -48,7 +52,9 @@ function ServiceCol(props) {
                         data-aos-duration="500"
                         data-aos-anchor="#servicee">
                         <div className="servicecol-right-bottom-left">
-                            <div className="icon">{props.icon_bottom}</div>
+                            <div className="icon">
+                                {props.icon_bottom && <img src={props.icon_bottom} alt="Top Icon" className='icon-img' />}
+                            </div>
                         </div>
                         <div className="servicecol-right-bottom-right">
                             <h3>{props.heading_bottom}</h3>
