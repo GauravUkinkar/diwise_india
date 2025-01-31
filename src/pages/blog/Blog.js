@@ -21,7 +21,7 @@ const Blog = () => {
 
   const fetchBlogList = async () => {
     try {
-      const response = await axios.get("https://admin.backend.diwise.in/getAllBlog");
+      const response = await axios.get("https://admin.backend.diwise.in/blog/getAllBlog");
       setBlogData(response.data.response);
       console.log(response, "Fetched Blog Data");
     } catch (error) {
