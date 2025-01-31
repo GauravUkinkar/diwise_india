@@ -27,8 +27,7 @@ import Privacy from "./pages/privacy/Privacy";
 import Termscondition from "./pages/terms/Termscondition";
 
 function App() {
-<<<<<<< Updated upstream
-  // const location = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
     // Initialize AOS for animations
@@ -39,21 +38,21 @@ function App() {
     });
   }, []);
 
-  // useEffect(() => {
-    
-  //   if (window.gtag) {
-  //     window.gtag("config", "G-CYF2JE0E4H", {
-  //       page_path: location.pathname + location.search,
-  //     });
-  //   }
-  // }, [location]); 
+  useEffect(() => {
+    // Track page view with Google Analytics on route change
+    if (window.gtag) {
+      window.gtag("config", "G-CYF2JE0E4H", {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location]); // This runs every time the route changes
 
-=======
->>>>>>> Stashed changes
   return (
     <div className="App">
       {/* Wrap the entire app with BrowserRouter */}
+      {/* Wrap the entire app with BrowserRouter */}
       <BrowserRouter>
+        <PageAnalytics />
         <PageAnalytics />
         <Scroll />
         <Header />
