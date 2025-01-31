@@ -14,9 +14,9 @@ const Blog_details = () => {
 
   const fetchBlogDetail = async () => {
     try {
-      const response = await axios.get(`http://62.72.56.158:5000/blog/getBlogById/${id}`);
+      const response = await axios.get(`https://admin.backend.diwise.in/blog/getBlogById/${id}`);
       setBlog(response.data.response);
-      console.log(response, 'llllllllllllyy')
+    
 
     } catch (error) {
       alert('Error Fetching Blog')
@@ -24,9 +24,9 @@ const Blog_details = () => {
   }
   const fetchBlog = async () => {
     try {
-      const response = await axios.get("http://62.72.56.158:5000/blog/getAllBlog");
+      const response = await axios.get("https://admin.backend.diwise.in/blog/getAllBlog");
       setBlogAll(response.data.response);
-      console.log(response, 'llllllllllllyy')
+      
 
     } catch (error) {
       alert('Error Fetching Blog')
@@ -57,7 +57,7 @@ const Blog_details = () => {
         {blog.map((blog) => (
           <div className="left">
             <div className="blog-image bg-img-cover" 
-             style={{ backgroundImage: `url(http://62.72.56.158/images/diwiseblog/${blog.image})` }}
+             style={{ backgroundImage: `url(https://images.diwise.in/diwiseblog/${blog.image})` }}
             >
               <div className="date">
                 {blog.date}
@@ -90,7 +90,7 @@ const Blog_details = () => {
             {blogAll.slice(0,3).map((blogItem, index) => (
               <div key={index} className="post-div">
                 <div  className="post-img bg-img-cover" alt="img"
-                 style={{ backgroundImage: `url(http://62.72.56.158/documents/diwiseblog/${blogItem.image})` }}
+                 style={{ backgroundImage: `url(https://images.diwise.in/diwiseblog/${blogItem.image})` }}
                 > </div>
                 <h5 className="latest-post-heading">{blogItem.title}</h5>
               </div>

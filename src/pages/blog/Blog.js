@@ -21,7 +21,7 @@ const Blog = () => {
 
   const fetchBlogList = async () => {
     try {
-      const response = await axios.get("http://62.72.56.158:5000/blog/getAllBlog");
+      const response = await axios.get("https://admin.backend.diwise.in/getAllBlog");
       setBlogData(response.data.response);
       console.log(response, "Fetched Blog Data");
     } catch (error) {
@@ -52,7 +52,7 @@ const Blog = () => {
                 <div className="img-overlay"></div>
                   <div
                     className="bg-img bg-img-cover"
-                    style={{ backgroundImage: `url(http://62.72.56.158/images/diwiseblog/${blog.image})` }}
+                    style={{ backgroundImage: `url(https://images.diwise.in/diwiseblog/${blog.image})` }}
                   ></div>
                 <div className="category-date-box">
                   <div className="category-title-box">
