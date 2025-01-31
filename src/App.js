@@ -30,15 +30,8 @@ function App() {
   return (
     <div className="App">
       {/* Wrap the entire app with BrowserRouter */}
-<<<<<<< Updated upstream
-      {/* Wrap the entire app with BrowserRouter */}
       <BrowserRouter>
         <PageAnalytics />
-        <PageAnalytics />
-=======
-      <BrowserRouter>
-        <PageAnalytics />
->>>>>>> Stashed changes
         <Scroll />
         <Header />
         <Routes>
