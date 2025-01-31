@@ -27,33 +27,18 @@ import Privacy from "./pages/privacy/Privacy";
 import Termscondition from "./pages/terms/Termscondition";
 
 function App() {
-  const location = useLocation();
-
-  useEffect(() => {
-    // Initialize AOS for animations
-    AOS.init({
-      duration: 1000, // Animation duration (ms)
-      easing: "ease-in-out", // Animation easing
-      once: true, // Whether the animation should happen only once
-    });
-  }, []);
-
-  useEffect(() => {
-    // Track page view with Google Analytics on route change
-    if (window.gtag) {
-      window.gtag("config", "G-CYF2JE0E4H", {
-        page_path: location.pathname + location.search,
-      });
-    }
-  }, [location]); // This runs every time the route changes
-
   return (
     <div className="App">
       {/* Wrap the entire app with BrowserRouter */}
+<<<<<<< Updated upstream
       {/* Wrap the entire app with BrowserRouter */}
       <BrowserRouter>
         <PageAnalytics />
         <PageAnalytics />
+=======
+      <BrowserRouter>
+        <PageAnalytics />
+>>>>>>> Stashed changes
         <Scroll />
         <Header />
         <Routes>
