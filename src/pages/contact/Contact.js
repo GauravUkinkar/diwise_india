@@ -32,6 +32,12 @@ function Contact() {
         `http://62.72.56.158:5000/contact/addContact`,
         contactData
       );
+      // setContactData({
+      // name: "",
+      // email: "",
+      // contact: "",
+      // message: "",
+      // })
       console.log(response, "ddddd");
       alert("Form Submitted Successfully");
     } catch (error) {
@@ -150,10 +156,10 @@ function Contact() {
                   <span>
                     <AiOutlineMail />{" "}
                   </span>
-                  <span>info@gmail.com</span>
+                  <span>info@diwise.in</span>
                 </a>
               </div>
-              <div className="contact-icon-box">
+              {/* <div className="contact-icon-box">
                 <a href="mailto: diwiseltd27@gmail.com">
                   {" "}
                   <span>
@@ -161,14 +167,14 @@ function Contact() {
                   </span>
                   <span> diwiseltd27@gmail.com</span>
                 </a>
-              </div>
+              </div> */}
               <div className="contact-icon-box">
-                <a href="tel:+91 98521 46940">
+                <a href="tel:+91 76666 01972">
                   {" "}
                   <span>
                     <PiPhoneLight />
                   </span>
-                  <span> +91 98521 46940</span>
+                  <span> +91 76666 01972</span>
                 </a>
               </div>
               <div className="contact-icon-box">

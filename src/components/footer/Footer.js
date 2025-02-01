@@ -213,7 +213,7 @@ function Footer() {
           f-p">© 2024  |  All Rights Reserved  |  DIwise</p>
 
           <p className="fb-p"><a href="/privacypolicy">Privacy Policy</a>
-          <a className="/termsandconditions">Terms & Conditions</a></p>
+          <a href="/termsandconditions">Terms & Conditions</a></p>
         </div>
 
       </div>
