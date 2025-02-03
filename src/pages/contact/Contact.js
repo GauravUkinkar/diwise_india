@@ -29,7 +29,7 @@ function Contact() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://62.72.56.158:5000/contact/addContact`,
+        `https://admin.backend.diwise.in/contact/addContact`,
         contactData
       );
       // setContactData({

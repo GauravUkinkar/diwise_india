@@ -48,7 +48,7 @@ function Sidebar() {
           </div>
           <div className="icon-boxh">
             <span className="iconsh"><HiOutlinePhone /></span>
-            <p className="address">+91 8482936866</p>
+            <p className="address">+91 76666 01972</p>
           </div>
           <div className="icon-boxh">
             <span className="iconsh"><IoLocationOutline /></span>

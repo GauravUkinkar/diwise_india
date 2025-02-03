@@ -27,29 +27,11 @@ import Privacy from "./pages/privacy/Privacy";
 import Termscondition from "./pages/terms/Termscondition";
 
 function App() {
-  // const location = useLocation();
-
-  useEffect(() => {
-    // Initialize AOS for animations
-    AOS.init({
-      duration: 1000, // Animation duration (ms)
-      easing: "ease-in-out", // Animation easing
-      once: true, // Whether the animation should happen only once
-    });
-  }, []);
-
-  // useEffect(() => {
-    
-  //   if (window.gtag) {
-  //     window.gtag("config", "G-CYF2JE0E4H", {
-  //       page_path: location.pathname + location.search,
-  //     });
-  //   }
-  // }, [location]); 
-
   return (
     <div className="App">
+      {/* Wrap the entire app with BrowserRouter */}
       <BrowserRouter>
+        <PageAnalytics />
         <Scroll />
         <Header />
         <Routes>
@@ -71,6 +53,22 @@ function App() {
       </BrowserRouter>
     </div>
   );
+}
+
+// Component to handle Google Analytics page tracking
+function PageAnalytics() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Track page view with Google Analytics on route change
+    if (window.gtag) {
+      window.gtag("config", "G-CYF2JE0E4H", {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location]); // This runs every time the route changes
+
+  return null; // This component doesn't render anything
 }
 
 export default App;
