@@ -151,12 +151,12 @@ function Contact() {
                 Info
               </h3>
               <div className="contact-icon-box">
-                <a href="mailto:info@gmail.com">
+                <a href="mailto:info@diwise.uk">
                   {" "}
                   <span>
                     <AiOutlineMail />{" "}
                   </span>
-                  <span>info@diwise.in</span>
+                  <span>info@diwise.uk</span>
                 </a>
               </div>
               {/* <div className="contact-icon-box">
