@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./blog_details.scss";
 import { IoSearch } from "react-icons/io5";
 import { MdCategory, MdOutlineArrowRightAlt } from "react-icons/md";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
 const Blog_details = () => {
@@ -16,11 +16,13 @@ const Blog_details = () => {
         `${process.env.REACT_APP_PORT_BACKEND}blog/getBybId?bId=${id}`
       );
 
-      const blogs = response.data.map((item) => item.data);
+      console.log(response)
+
+      const blogs = response.data.data;
 
       setBlog(blogs);
     } catch (error) {
-      alert("Error Fetching Blog");
+      // alert("Error Fetching Blog");
     }
   };
 
@@ -61,12 +63,19 @@ const Blog_details = () => {
     "Marketing",
   ];
 
+  const navigate = useNavigate();
+
+  const navigateNew = (id)=>{
+    navigate(`/blog_detail/${id}`);
+    window.location.reload()
+  }
+
   const [activeCategory, setActiveCategory] = useState(categories[1]);
 
   return (
     <div className="blog-detail-parent parent">
       <div className="blog-detail-cont container">
-        {blog?.map((blog) => (
+       
           <div className="left">
             <div
               className="blog-image bg-img-cover"
@@ -85,21 +94,21 @@ const Blog_details = () => {
             <h3 className="title">{blog?.title}</h3>
             <p className="blog-content">{blog?.description}</p>
           </div>
-        ))}
+      
         <div className="right">
-          <div className="search-box">
+          {/* <div className="search-box">
             <form className="search-blog-form">
               <input type="text" />
               <span className="search-in">
                 <IoSearch />
               </span>
             </form>
-          </div>
+          </div> */}
 
           <div className="latest-post-box">
             <h3>Latest Post</h3>
             {blogAll?.slice(0, 3)?.map((blogItem, index) => (
-              <div key={index} className="post-div">
+              <div key={index} className="post-div" onClick={()=>navigateNew(blogItem?.bid)} >
                 <div
                   className="post-img bg-img-cover"
                   alt="img"
@@ -123,7 +132,7 @@ const Blog_details = () => {
             </div> */}
           </div>
 
-          <div className="category-box">
+          {/* <div className="category-box">
             <h3 className="category-box-title">Category</h3>
             {blogAll?.map((category, index) => (
               <div
@@ -140,7 +149,7 @@ const Blog_details = () => {
                 <MdOutlineArrowRightAlt />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
