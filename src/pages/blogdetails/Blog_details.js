@@ -92,7 +92,7 @@ const Blog_details = () => {
               </div>
             </div>
             <h3 className="title">{blog?.title}</h3>
-            <p className="blog-content">{blog?.description}</p>
+            <p className="blog-content" dangerouslySetInnerHTML={{ __html: blog?.description }}/>
           </div>
       
         <div className="right">

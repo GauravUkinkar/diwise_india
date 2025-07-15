@@ -112,12 +112,14 @@ const Blog = () => {
                       <h4 className="blog-heading">
                         <a href={blog.link1}>{blog?.title}</a>
                       </h4>
-                      <p>
-                        {blog?.description
-                          ?.replace(/<[^>]+>/g, "")
-                          ?.slice(0, 60)}
-                        ...
-                      </p>
+                      <p
+                        className="blog-content"
+                        dangerouslySetInnerHTML={{
+                          __html: blog?.description
+                            ?.replace(/<[^>]+>/g, "")
+                            ?.slice(0, 60),
+                        }}
+                      />
                     </div>
                   </div>
                 ))}
