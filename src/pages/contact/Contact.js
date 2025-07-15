@@ -2,26 +2,26 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Contact.scss";
 import { PiPhoneLight } from "react-icons/pi";
-import { MdOutlineMailOutline } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
-import { AiOutlineMail, AiTwotoneMail } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
 
 function Contact() {
   const [contactData, setContactData] = useState({
-    name: "",
+    fname: "",
+    lname: "",
     email: "",
-    contact: "",
+    phoneNumber: "",
     message: "",
   });
 
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
-      easing: "ease-in-out", // Easing for the animation
+      duration: 1200,
+      once: true,
+      easing: "ease-in-out",
     });
   }, []);
 
@@ -29,16 +29,9 @@ function Contact() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `https://admin.backend.diwise.in/contact/addContact`,
+        `${process.env.REACT_APP_PORT_BACKEND}contact/addContacts`,
         contactData
       );
-      // setContactData({
-      // name: "",
-      // email: "",
-      // contact: "",
-      // message: "",
-      // })
-      console.log(response, "ddddd");
       alert("Form Submitted Successfully");
     } catch (error) {
       alert("Something Wrong");
@@ -85,15 +78,27 @@ function Contact() {
                 digital success.
               </p>
               <form className="contact-form" onSubmit={onSubmit}>
-                <input
-                  type="text"
-                  placeholder="Name"
-                  name="name"
-                  value={contactData.name}
-                  onChange={(e) =>
-                    setContactData({ ...contactData, name: e.target.value })
-                  }
-                />
+                <p className="name-parent">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    name="fname"
+                    value={contactData.fname}
+                    onChange={(e) =>
+                      setContactData({ ...contactData, fname: e.target.value })
+                    }
+                  />
+
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    name="lname"
+                    value={contactData.lname}
+                    onChange={(e) =>
+                      setContactData({ ...contactData, lname: e.target.value })
+                    }
+                  />
+                </p>
 
                 <input
                   type="email"
@@ -108,14 +113,14 @@ function Contact() {
                   type="tel"
                   placeholder="Phone"
                   name="contact"
-                  value={contactData.contact}
+                  value={contactData.phoneNumber}
                   onChange={(e) => {
                     const value = e.target.value;
                     // Allow only numbers and limit to 10 characters
                     if (/^\d*$/.test(value)) {
                       setContactData({
                         ...contactData,
-                        contact: e.target.value,
+                        phoneNumber: e.target.value,
                       });
                     }
                   }}
@@ -159,15 +164,6 @@ function Contact() {
                   <span>info@diwise.uk</span>
                 </a>
               </div>
-              {/* <div className="contact-icon-box">
-                <a href="mailto: diwiseltd27@gmail.com">
-                  {" "}
-                  <span>
-                    <AiOutlineMail />{" "}
-                  </span>
-                  <span> diwiseltd27@gmail.com</span>
-                </a>
-              </div> */}
               <div className="contact-icon-box">
                 <a href="tel:+91 76666 01972">
                   {" "}

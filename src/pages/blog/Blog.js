@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 const Blog = () => {
   const [visibleItemCount, setVisibleItemCount] = useState(3);
   const [blogData, setBlogData] = useState([]);
-  const [fetchError, setFetchError] = useState(false); // State to track fetch errors
+  const [fetchError, setFetchError] = useState(false);
   const navigate = useNavigate();
 
   const handleLoadMore = () => {
@@ -21,12 +21,17 @@ const Blog = () => {
 
   const fetchBlogList = async () => {
     try {
-      const response = await axios.get("https://admin.backend.diwise.in/blog/getAllBlog");
-      setBlogData(response.data.response);
-      setFetchError(false); // Reset error state on successful fetch
+      const response = await axios.get(
+        `${process.env.REACT_APP_PORT_BACKEND}blog/getallblogs`
+      );
+
+      const blogs = response.data.map((item) => item.data);
+
+      setBlogData(blogs);
+      setFetchError(false);
     } catch (error) {
       console.error("Error fetching blogs:", error);
-      setFetchError(true); // Set error state if fetch fails
+      setFetchError(true);
     }
   };
 
@@ -40,7 +45,10 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Business & Digital Marketing Insights | DIwise Blog - Stay Updated with Expert Advice</title>
+        <title>
+          Business & Digital Marketing Insights | DIwise Blog - Stay Updated
+          with Expert Advice
+        </title>
         <meta
           name="description"
           content="Stay ahead with the latest trends and insights in business growth, digital marketing, branding, and technology. Explore expert tips, case studies, and strategies from DIwise's blog to help your business succeed online."
@@ -57,32 +65,35 @@ const Blog = () => {
             <>
               {/* <h2>Blogs</h2> */}
               <div className="error-parent">
-              <div className="error-message">
-                <p>Oops! Something went wrong. Please try again later.</p>
-              </div>
+                <div className="error-message">
+                  <p>Oops! Something went wrong. Please try again later.</p>
+                </div>
 
-              <div className="cta-box-blog">
-                <Link to="/" className="btn-active2">Back To Home</Link>
-                <a className="btn-active" onClick={handleRefresh}  >Refresh</a>
-              </div>
-
+                <div className="cta-box-blog">
+                  <Link to="/" className="btn-active2">
+                    Back To Home
+                  </Link>
+                  <a className="btn-active" onClick={handleRefresh}>
+                    Refresh
+                  </a>
+                </div>
               </div>
             </>
           ) : (
             <>
               <div className="top">
-                {blogData.slice(0, visibleItemCount).map((blog) => (
+                {blogData?.slice(0, visibleItemCount).map((blog) => (
                   <div
-                    key={blog.id}
+                    key={blog?.bid}
                     className="blog-card"
-                    onClick={() => handleCardClick(blog.id)}
+                    onClick={() => handleCardClick(blog?.bid)}
                   >
                     <a href={blog.link1} className="blog-card-top">
                       <div className="img-overlay"></div>
                       <div
                         className="bg-img bg-img-cover"
                         style={{
-                          backgroundImage: `url(https://images.diwise.in/diwiseblog/${blog.image})`,
+                          backgroundImage: `url(${blog.featuredImage})`,
                         }}
                       ></div>
                       <div className="category-date-box">
@@ -91,26 +102,27 @@ const Blog = () => {
                             <span>
                               <FaRegFolderOpen />
                             </span>{" "}
-                            {blog.category}
+                            {blog?.category}
                           </h6>
                         </div>
-                        <div className="blog-date">{blog.date}</div>
+                        <div className="blog-date">{blog?.date}</div>
                       </div>
                     </a>
                     <div className="blog-card-bottom">
                       <h4 className="blog-heading">
-                        <a href={blog.link1}>{blog.title}</a>
+                        <a href={blog.link1}>{blog?.title}</a>
                       </h4>
                       <p>
-                        {blog.description.length > 60
-                          ? blog.description.slice(0, 60) + "..."
-                          : blog.description}
+                        {blog?.description
+                          ?.replace(/<[^>]+>/g, "")
+                          ?.slice(0, 60)}
+                        ...
                       </p>
                     </div>
                   </div>
                 ))}
               </div>
-              {visibleItemCount < blogData.length && (
+              {visibleItemCount < blogData?.length && (
                 <div className="bottom">
                   <div className="cta" onClick={handleLoadMore}>
                     Load More
