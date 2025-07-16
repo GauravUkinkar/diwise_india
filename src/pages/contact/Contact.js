@@ -33,6 +33,7 @@ function Contact() {
         contactData
       );
       alert("Form Submitted Successfully");
+      window.location.reload();
     } catch (error) {
       alert("Something Wrong");
     }
