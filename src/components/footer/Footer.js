@@ -210,7 +210,7 @@ function Footer() {
         </div>
         <div className="footer-bottom container">
           <p className="
-          f-p">© 2024  |  All Rights Reserved  |  DIwise</p>
+          f-p">© {new Date().getFullYear()} |  All Rights Reserved  |  DIwise</p>
 
           <p className="fb-p"><a href="/privacypolicy">Privacy Policy</a>
           <a href="/termsandconditions">Terms & Conditions</a></p>
