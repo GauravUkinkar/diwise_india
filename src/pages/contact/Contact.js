@@ -10,10 +10,10 @@ import { Helmet } from "react-helmet";
 
 function Contact() {
   const [contactData, setContactData] = useState({
-    fname: "",
-    lname: "",
+    firstName: "",
+    lastName: "",
     email: "",
-    phoneNumber: "",
+    contact: "",
     message: "",
     websiteName:"Diwise In"
   });
@@ -30,9 +30,11 @@ function Contact() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_PORT_BACKEND}contact/addContacts`,
+        `${process.env.REACT_APP_PORT_BACKEND}contact/addcontact`,
         contactData
       );
+      console.log(response, ">>response");
+      
       alert("Form Submitted Successfully");
       window.location.reload();
     } catch (error) {
@@ -84,20 +86,20 @@ function Contact() {
                   <input
                     type="text"
                     placeholder="First Name"
-                    name="fname"
-                    value={contactData.fname}
+                    name="firstName"
+                    value={contactData.firstName}
                     onChange={(e) =>
-                      setContactData({ ...contactData, fname: e.target.value })
+                      setContactData({ ...contactData, firstName: e.target.value })
                     }
                   />
 
                   <input
                     type="text"
                     placeholder="Last Name"
-                    name="lname"
-                    value={contactData.lname}
+                    name="lastName"
+                    value={contactData.lastName}
                     onChange={(e) =>
-                      setContactData({ ...contactData, lname: e.target.value })
+                      setContactData({ ...contactData, lastName: e.target.value })
                     }
                   />
                 </p>
@@ -115,14 +117,14 @@ function Contact() {
                   type="tel"
                   placeholder="Phone"
                   name="contact"
-                  value={contactData.phoneNumber}
+                  value={contactData.contact}
                   onChange={(e) => {
                     const value = e.target.value;
                     // Allow only numbers and limit to 10 characters
                     if (/^\d*$/.test(value)) {
                       setContactData({
                         ...contactData,
-                        phoneNumber: e.target.value,
+                        contact: e.target.value,
                       });
                     }
                   }}
