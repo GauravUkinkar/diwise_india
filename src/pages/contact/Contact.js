@@ -15,6 +15,7 @@ function Contact() {
     email: "",
     phoneNumber: "",
     message: "",
+    websiteName:"Diwise In"
   });
 
   useEffect(() => {
