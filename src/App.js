@@ -31,7 +31,6 @@ function App() {
     <div className="App">
       {/* Wrap the entire app with BrowserRouter */}
       <BrowserRouter>
-        <PageAnalytics />
         <Scroll />
         <Header />
         <Routes>
@@ -55,20 +54,6 @@ function App() {
   );
 }
 
-// Component to handle Google Analytics page tracking
-function PageAnalytics() {
-  const location = useLocation();
 
-  useEffect(() => {
-    // Track page view with Google Analytics on route change
-    if (window.gtag) {
-      window.gtag("config", "G-CYF2JE0E4H", {
-        page_path: location.pathname + location.search,
-      });
-    }
-  }, [location]); // This runs every time the route changes
-
-  return null; // This component doesn't render anything
-}
 
 export default App;
