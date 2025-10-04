@@ -81,8 +81,9 @@ const Blog = () => {
             </>
           ) : (
             <>
+
               <div className="top">
-                {blogData?.slice(0, visibleItemCount).map((blog) => (
+                {blogData?.slice()?.reverse().slice(0, visibleItemCount).map((blog) => (
                   <div
                     key={blog?.bid}
                     className="blog-card"
