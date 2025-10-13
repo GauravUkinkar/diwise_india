@@ -4,6 +4,7 @@ import { IoSearch } from "react-icons/io5";
 import { MdCategory, MdOutlineArrowRightAlt } from "react-icons/md";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const Blog_details = () => {
   const { id } = useParams();
@@ -13,7 +14,7 @@ const Blog_details = () => {
   const fetchBlogDetail = async () => {
     try {
       const response = await axios.get(
-        `${process.env.REACT_APP_PORT_BACKEND}blog/getBybId?bId=${id}`
+        `${process.env.REACT_APP_PORT_BACKEND}blog/getBytitle?title=${id.split("_").join(" ")}`
       );
 
       console.log(response)
@@ -73,6 +74,21 @@ const Blog_details = () => {
   const [activeCategory, setActiveCategory] = useState(categories[1]);
 
   return (
+
+    <>
+          <Helmet>
+        <title>
+         {blog?.meta_title}
+        </title>
+        <meta
+          name="description"
+          content={blog?.meta_description}
+        />
+        <meta
+          name="keywords"
+          content={blog?.meta_keyword}
+        />
+      </Helmet>
     <div className="blog-detail-parent parent">
       <div className="blog-detail-cont container">
        
@@ -153,6 +169,7 @@ const Blog_details = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

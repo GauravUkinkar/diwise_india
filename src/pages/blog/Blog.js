@@ -91,16 +91,16 @@ const Blog = () => {
                   <div
                     key={blog?.bid}
                     className="blog-card"
-                    onClick={() => handleCardClick(blog?.bid)}
+                    onClick={() => handleCardClick(blog?.title.split(" ").join("_"))}
                   >
                     <a href={blog.link1} className="blog-card-top">
                       <div className="img-overlay"></div>
                       <div
                         className="bg-img bg-img-cover"
-                        style={{
-                          backgroundImage: `url(${blog.featuredImage})`,
-                        }}
-                      ></div>
+                     
+                      >
+                      <img src={blog.featuredImage} alt={blog.alter_text} />
+                      </div>
                       <div className="category-date-box">
                         <div className="category-title-box">
                           <h6 className="category-title">
