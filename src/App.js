@@ -25,6 +25,8 @@ import Blog from "./pages/blog/Blog";
 import Fourzero from "./pages/fouro/Fourzero";
 import Privacy from "./pages/privacy/Privacy";
 import Termscondition from "./pages/terms/Termscondition";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -33,6 +35,17 @@ function App() {
       <BrowserRouter>
         <Scroll />
         <Header />
+                <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
