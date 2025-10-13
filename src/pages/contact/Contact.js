@@ -26,21 +26,44 @@ function Contact() {
     });
   }, []);
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post(
-        `${process.env.REACT_APP_PORT_BACKEND}contact/addcontact`,
-        contactData
-      );
-      console.log(response, ">>response");
-      
-      alert("Form Submitted Successfully");
-      window.location.reload();
-    } catch (error) {
-      alert("Something Wrong");
-    }
-  };
+const onSubmit = async (e) => {
+  e.preventDefault();
+
+  if (
+    !contactData.firstName.trim() ||
+    !contactData.lastName.trim() ||
+    !contactData.email.trim() ||
+    !contactData.contact.trim() ||
+    !contactData.message.trim()
+  ) {
+    alert("⚠️ Please fill all required fields.");
+    return;
+  }
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(contactData.email)) {
+    alert("⚠️ Please enter a valid email address.");
+    return;
+  }
+  if (contactData.contact.length !== 10) {
+    alert("⚠️ Please enter a 10-digit phone number.");
+    return;
+  }
+
+  try {
+    const response = await axios.post(
+      `${process.env.REACT_APP_PORT_BACKEND}contact/addcontact`,
+      contactData
+    );
+    console.log(response, ">>response");
+
+    alert("✅ Form submitted successfully!");
+    window.location.reload();
+  } catch (error) {
+    console.error(error);
+    alert("❌ Something went wrong while submitting the form.");
+  }
+};
+
 
   return (
     <>

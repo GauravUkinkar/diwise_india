@@ -4,11 +4,13 @@ import { FaRegFolderOpen } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Helmet } from "react-helmet";
+import Loader from "../../components/loader/Loader"; // <-- Import Loader
 
 const Blog = () => {
   const [visibleItemCount, setVisibleItemCount] = useState(3);
   const [blogData, setBlogData] = useState([]);
   const [fetchError, setFetchError] = useState(false);
+  const [loading, setLoading] = useState(true); // <-- Add loading state
   const navigate = useNavigate();
 
   const handleLoadMore = () => {
@@ -21,6 +23,7 @@ const Blog = () => {
 
   const fetchBlogList = async () => {
     try {
+      setLoading(true); // <-- Start loading
       const response = await axios.get(
         `${process.env.REACT_APP_PORT_BACKEND}blog/getallblogs`
       );
@@ -32,6 +35,8 @@ const Blog = () => {
     } catch (error) {
       console.error("Error fetching blogs:", error);
       setFetchError(true);
+    } finally {
+      setLoading(false); // <-- Stop loading
     }
   };
 
@@ -61,14 +66,14 @@ const Blog = () => {
       <div className="blog-parent parent">
         <div className="blog-cont container">
           <h2>Blogs</h2>
-          {fetchError ? (
+          {loading ? ( // <-- Show loader while loading
+            <Loader />
+          ) : fetchError ? (
             <>
-              {/* <h2>Blogs</h2> */}
               <div className="error-parent">
                 <div className="error-message">
                   <p>Oops! Something went wrong. Please try again later.</p>
                 </div>
-
                 <div className="cta-box-blog">
                   <Link to="/" className="btn-active2">
                     Back To Home
@@ -81,7 +86,6 @@ const Blog = () => {
             </>
           ) : (
             <>
-
               <div className="top">
                 {blogData?.slice()?.reverse().slice(0, visibleItemCount).map((blog) => (
                   <div

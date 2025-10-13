@@ -133,6 +133,10 @@ padding-top: 10px;
 .f-p{
   font-size: 15px;
   color: rgba(255, 255, 255, 0.777);
+  a{
+    text-decoration: none !important;
+    color: white;
+  }
   }
   .fb-p{
     font-size: 15px;
@@ -140,6 +144,7 @@ padding-top: 10px;
     display: flex;
     gap:20px;
     text-decoration: none !important;
+    
     a{
       text-decoration: none !important;
       color: rgba(255, 255, 255, 0.777);
