@@ -54,7 +54,7 @@ function App() {
           <Route path="/brandingAndDesign" element={<Branding />} />
           <Route path="/publicRelations" element={<Public />} />
           <Route path="/websiteDevelopment" element={<Website />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blogs" element={<Blog />} />
           <Route path="/blog_detail/:id" element={<Blog_details />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacypolicy" element={<Privacy/>} />

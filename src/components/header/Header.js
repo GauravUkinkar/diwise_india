@@ -98,7 +98,7 @@ function Header() {
               <Link to="/websiteDevelopment" onClick={scrollToTop}>Website Development</Link>
             </div>
           </div>
-          <Link to="/blog" onClick={scrollToTop}>Blog</Link>
+          <Link to="/blogs" onClick={scrollToTop}>Blog</Link>
           <Link to="/contact" onClick={scrollToTop}>Contact</Link>
         </div>
 
